@@ -28,7 +28,7 @@ export const ThemeSwitcher = () => {
   return (
     <label
       htmlFor="check"
-      className="bg-gray relative w-[54px] h-[32px] rounded-full flex items-center"
+      className="bg-gray relative w-[54px] h-[32px] rounded-full flex items-center cursor-pointer"
       style={labelStyle}
     >
       <input
