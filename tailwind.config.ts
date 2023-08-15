@@ -22,11 +22,10 @@ module.exports = {
         'gray': '#2E2E2E',
         'light-gray': '#E2E2E2',
       },
-      screens: {
-        'xs': '400px',
-      },
-      maxWidth: {
-        '10xl': '1680px'
+      screens:{
+        'tablet':'768px',
+        'laptop':'1024px',
+        'desktop':'1280px',
       }
     },
   },
