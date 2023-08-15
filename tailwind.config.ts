@@ -1,6 +1,6 @@
-import type { Config } from 'tailwindcss'
+/** @type {import('tailwindcss').Config} */
 
-const config: Config = {
+module.exports = {
   content: [
     './pages/**/*.{js,ts,jsx,tsx,mdx}',
     './components/**/*.{js,ts,jsx,tsx,mdx}',
@@ -8,13 +8,25 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+      fontFamily:{
+        serif: ['var(--font-brasika)', 'serif'],
       },
+      colors: {
+        'light-theme': '#F7F7F7',
+        'dark-theme': '#1F1F1F',
+        'pink': '#F8B4E3',
+        'blue': '#38B8FF',
+        'green': '#41C177',
+        'light-blue': '#CEEEFF',
+        'gray': '#2E2E2E',
+      },
+      screens: {
+        'xs': '400px',
+      },
+      maxWidth: {
+        '10xl': '1680px'
+      }
     },
   },
   plugins: [],
-}
-export default config
+};

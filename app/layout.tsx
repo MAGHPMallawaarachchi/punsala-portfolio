@@ -1,6 +1,12 @@
 import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
+import localFont from 'next/font/local'
+
+const brasika = localFont({
+  src: '../public/fonts/brasika-display.otf',
+  variable: '--font-brasika'
+})
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -15,7 +21,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className={`${brasika.variable} font-serif`}>
       <body className={inter.className}>{children}</body>
     </html>
   )
