@@ -30,4 +30,22 @@ h1 {
   @apply flex items-center justify-start;
 }
 
+.text-stroke-3 {
+  text-shadow: -2px -2px 0 #f8b4e3, 2px -2px 0 #f8b4e3, -2px 2px 0 #f8b4e3, 2px 2px 0 #f8b4e3;
+}
+
+@layer base {
+  .text-color{
+    @apply dark:text-light text-dark;
+  }
+
+  .hero-heading{
+    @apply text-[105px] text-color uppercase leading-none;
+  }
+
+  .font-outline {
+    -webkit-text-stroke: 3px #f8b4e3;
+  }
+}
+
 
