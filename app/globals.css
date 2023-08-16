@@ -84,7 +84,7 @@ h1 {
   }
 
   .paddings {
-    @apply px-[30px] laptop:px-[60px] tablet:px-[60px] mobile:px-[30px] py-[60px] laptop:py-[100px] tablet:py-[100px] mobile:py-[90px];
+    @apply px-[30px] laptop:px-[30px] tablet:px-[60px] mobile:px-[30px] py-[60px] laptop:py-[100px] tablet:py-[100px] mobile:py-[90px];
   }
 
   .paragraph {
