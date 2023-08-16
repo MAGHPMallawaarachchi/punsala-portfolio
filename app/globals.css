@@ -39,6 +39,10 @@ h1 {
     @apply dark:text-light text-dark;
   }
 
+  .navbar-items {
+    @apply text-color uppercase text-[16px] font-semibold;
+  }
+
   .hero-heading{
     @apply laptop:text-[105px] tablet:text-[75px] mobile:text-[45px] text-[35px] text-color uppercase leading-none;
   }
@@ -59,10 +63,30 @@ h1 {
     -webkit-text-stroke: 1px black;
   }
 
+  .heading {
+    @apply text-color tablet:text-[60px] text-[40px];
+  }
+
+  .button-text {
+    @apply uppercase text-dark tablet:text-[18px] text-[14px] font-bold leading-none py-[10px];
+  }
+
+  .button {
+    @apply border-2 border-dark rounded-full;
+  }
+
+  .paddings {
+    @apply px-[30px] laptop:px-[60px] tablet:px-[60px] mobile:px-[30px] py-[60px] laptop:py-[100px] tablet:py-[100px] mobile:py-[90px];
+  }
+
+  .paragraph {
+    @apply text-color text-left tablet:leading-[36px] leading-[25px] tablet:text-[20px] text-[16px] font-normal ;
+  }
+
 }
 
 .height {
-  --navbar-height: 80px;
+  --navbar-height: 60px;
   height: calc(100vh - var(--navbar-height));
 }
 

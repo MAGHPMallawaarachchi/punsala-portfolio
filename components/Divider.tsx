@@ -32,7 +32,7 @@ const Divider = () => {
   }, []);
 
   return (
-    <section className='w-full overflow-hidden my-10'>
+    <section className='w-full overflow-hidden'>
       <div className='flex justify-between gap-2'>
         {Array.from({ length: numRepeat }, (_, index) => (
           <div key={index} className='flex gap-1 items-center'>

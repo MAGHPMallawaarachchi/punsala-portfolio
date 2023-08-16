@@ -1,3 +1,4 @@
+import About from '@/components/About'
 import Divider from '@/components/Divider'
 import Hero from '@/components/Hero'
 import Image from 'next/image'
@@ -7,6 +8,7 @@ export default function Home() {
       <section>
         <Hero/>
         <Divider/>
+        <About/>
       </section>
   )
 }

@@ -19,8 +19,8 @@ const Navbar = () => {
     }
 
     return (
-        <div className='sticky top-0 z-50 bg-light dark:bg-dark shadow-sm'>
-            <nav className='flex items-center justify-between mx-auto max-w-7xl px-8 py-5'>
+        <div className='sticky top-0 z-50 bg-light dark:bg-dark shadow-sm px-8'>
+            <nav className='flex items-center justify-between mx-auto max-w-7xl w-full py-5'>
                 <Link href='/'>
                     <Image
                         src='/images/Logo.svg'
@@ -30,9 +30,9 @@ const Navbar = () => {
                     />
                 </Link>
 
-                <ul className='hidden laptop:flex gap-[10px] text-dark dark:text-light'>
+                <ul className='hidden laptop:flex gap-[10px]'>
                     {NavLinks.map((link) => (
-                        <Link href={link.href} key={link.key} className='px-[15px] py-[4px] uppercase text-[16px] font-semibold'>
+                        <Link href={link.href} key={link.key} className='px-[15px] py-[4px] navbar-items'>
                             {link.text}
                         </Link>
                     ))}
