@@ -20,12 +20,20 @@ const Navbar = () => {
 
     return (
             <nav className='flex items-center justify-between w-full py-5 px-8 fixed top-0 z-50 bg-color shadow-sm '>
-                <Link href='/'>
+                <Link href='/' className='hidden tablet:flex'>
                     <Image
                         src='/images/Logo.svg'
                         alt='logo'
                         width={160}
                         height={30}
+                    />
+                </Link>
+                <Link href='/' className='tablet:hidden flex'>
+                    <Image
+                        src='/images/Logo.svg'
+                        alt='logo'
+                        width={113}
+                        height={25}
                     />
                 </Link>
 
