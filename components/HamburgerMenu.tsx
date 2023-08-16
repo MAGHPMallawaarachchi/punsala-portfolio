@@ -29,8 +29,8 @@ const HamburgerMenu = ({ onClose }:Props) => {
                 <Image
                     src='/images/Logo.svg'
                     alt='logo'
-                    width={160}
-                    height={30}
+                    width={113}
+                    height={25}
                 />
             </Link>
             <button className='laptop:hidden' onClick={onClose}>
