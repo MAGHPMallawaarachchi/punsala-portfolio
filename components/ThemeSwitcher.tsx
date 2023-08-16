@@ -6,7 +6,7 @@ import Sun from "./icons/Sun";
 
 export const ThemeSwitcher = () => {
   const [mounted, setMounted] = useState(false);
-  const { theme, setTheme } = useTheme();
+  const { resolvedTheme, setTheme } = useTheme();
 
   useEffect(() => {
     setMounted(true);
@@ -17,12 +17,12 @@ export const ThemeSwitcher = () => {
   }
 
   const circleStyle = {
-    backgroundColor: theme === "light" ? "#F7F7F7" : "#1F1F1F",
+    backgroundColor: resolvedTheme === "light" ? "#F7F7F7" : "#1F1F1F",
   };
 
   const labelStyle = {
-    backgroundColor: theme === "light" ? "#E2E2E2" : "#2E2E2E",
-    color: theme === "light" ? "#38B8FF" : "#F8B4E3",
+    backgroundColor: resolvedTheme === "light" ? "#E2E2E2" : "#2E2E2E",
+    color: resolvedTheme === "light" ? "#38B8FF" : "#F8B4E3",
   };
 
   return (
@@ -35,14 +35,14 @@ export const ThemeSwitcher = () => {
         type="checkbox"
         id="check"
         className="sr-only peer"
-        checked={theme === "dark"}
-        onChange={() => setTheme(theme === "dark" ? "light" : "dark")}
+        checked={resolvedTheme === "dark"}
+        onChange={() => setTheme(resolvedTheme === "dark" ? "light" : "dark")}
       />
       <span
         className="w-[26px] h-[26px] absolute rounded-full left-1 top-1/2 transform -translate-y-1/2 peer-checked:left-6 transition-all duration-500 flex items-center justify-center"
         style={circleStyle}
       >
-        {theme === "dark" ? <Moon /> : <Sun />}
+        {resolvedTheme === "dark" ? <Moon /> : <Sun />}
       </span>
     </label>
   );
