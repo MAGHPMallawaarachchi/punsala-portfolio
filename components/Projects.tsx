@@ -19,7 +19,7 @@ const Projects = () => {
 
   return (
     <section className='mx-auto max-w-7xl flex flex-col justify-center items-center overflow-hidden paddings' id='projects'>
-      <div className='flex tablet:mb-[90px] mb-[60px]'>
+      <div className='flex tablet:mb-[90px] mb-[30px]'>
         <div className='hidden laptop:flex flex-col items-end'>
           <Star height={42}/>
           <Star height={22}/>
@@ -28,7 +28,7 @@ const Projects = () => {
           <Star height={23}/>
           <Star height={14}/>
         </div>
-        <h1 className='heading'>Projects</h1>
+        <h1 className='heading mr-'>Projects</h1>
       </div>
       
       <div className='flex flex-wrap laptop:justify-between justify-center'>
