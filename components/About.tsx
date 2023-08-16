@@ -3,7 +3,7 @@ import Button from './Button'
 
 const About = () => {
   return (
-    <section className='mx-auto max-w-7xl flex justify-center items-center overflow-hidden paddings'>
+    <section className='mx-auto max-w-7xl flex justify-center items-center overflow-hidden paddings' id='about'>
 
         <div className='flex laptop:flex-row flex-col items-center laptop:w-full tablet:w-[80%] w-full justify-between laptop:gap-0 gap-[60px]'>
 
