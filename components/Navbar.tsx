@@ -40,7 +40,7 @@ const Navbar = () => {
                 </ul>
 
                 <button className='laptop:hidden' onClick={toggleMenu}>
-                    <Menu />
+                    <Menu height={18} width={20} />
                 </button>
 
                 {isMenuOpen && <HamburgerMenu onClose={toggleMenu} />}

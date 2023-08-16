@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Close from './icons/Close';
 import Link from 'next/link';
 import Image from 'next/image';
@@ -13,6 +13,15 @@ type Props = {
 }
 
 const HamburgerMenu = ({ onClose }:Props) => {
+
+    useEffect(() => {
+        // Disable scrolling when the hamburger menu is open
+        document.body.style.overflow = 'hidden';
+        return () => {
+            document.body.style.overflow = 'auto';
+        };
+    }, []);
+
   return (
     <div className="laptop:hidden flex flex-col justify-between fixed top-0 left-0 w-full h-screen dark:bg-black bg-white bg-opacity-95 px-8 py-5">
         <div className='flex items-center justify-between'>
@@ -25,14 +34,16 @@ const HamburgerMenu = ({ onClose }:Props) => {
                 />
             </Link>
             <button className='laptop:hidden' onClick={onClose}>
-                <Close />
+                <Close height={18} />
             </button>
         </div>
-        <ul className='flex flex-col items-center text-dark dark:text-light gap-10'>
-            {NavLinks.map((link)=>(
-                <Link href={link.href} key={link.key} className='uppercase text-xl font-semibold'>
-                    {link.text}
-                </Link>
+        <ul className='flex flex-col items-center gap-10'>
+            {NavLinks.map((link) => (
+                <button className='navbar-button' onClick={onClose}>
+                    <Link href={link.href} key={link.key} className='px-[15px] py-[6px] navbar-items'>
+                        {link.text}
+                    </Link>
+                </button>
             ))}
         </ul>
         <div className='flex justify-between'>
