@@ -2,9 +2,9 @@ import React from 'react'
 
 const MyPassion = () => {
   return (
-    <section className='mx-auto max-w-7xl flex justify-center items-center overflow-hidden paddings dark:bg-gray bg-light-blue tablet:rounded-[80px] rounded-[50px]'>
+    <section className='mx-auto flex justify-center items-center overflow-hidden dark:bg-gray bg-light-blue tablet:rounded-[80px] rounded-[50px]'>
 
-        <div className='flex laptop:flex-row flex-col items-center laptop:w-full tablet:w-[80%] w-full justify-between laptop:gap-2 gap-[60px]'>
+        <div className='max-w-7xl paddings flex laptop:flex-row flex-col items-center laptop:w-full tablet:w-[80%] w-full justify-between laptop:gap-2 gap-[60px]'>
 
             <div className='laptop:w-[500px] w-full aspect-[4/3] bg-pink'></div>
 

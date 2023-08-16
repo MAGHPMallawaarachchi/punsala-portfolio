@@ -4,7 +4,7 @@ import Star from './icons/Star'
 
 const Hero = () => {
   return (
-    <section className='mx-auto max-w-7xl flex laptop:flex-row flex-col-reverse justify-center items-center height overflow-x-hidden px-8'>
+    <section className='mx-auto max-w-7xl flex laptop:flex-row flex-col-reverse justify-center items-center h-screen overflow-x-hidden px-8'>
 
         <div className='z-10 -mt-6 laptop:-mt-0'>
             <h4 className='hidden laptop:flex text-[22px] hero-name mb-4'>Hasini Punsala</h4>

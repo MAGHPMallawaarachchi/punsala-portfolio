@@ -19,8 +19,7 @@ const Navbar = () => {
     }
 
     return (
-        <div className='sticky top-0 z-50 bg-light dark:bg-dark shadow-sm px-8'>
-            <nav className='flex items-center justify-between mx-auto max-w-7xl w-full py-5'>
+            <nav className='flex items-center justify-between w-full py-5 px-8 fixed top-0 z-50 bg-color shadow-sm '>
                 <Link href='/'>
                     <Image
                         src='/images/Logo.svg'
@@ -32,9 +31,11 @@ const Navbar = () => {
 
                 <ul className='hidden laptop:flex gap-[10px]'>
                     {NavLinks.map((link) => (
-                        <Link href={link.href} key={link.key} className='px-[15px] py-[4px] navbar-items'>
-                            {link.text}
-                        </Link>
+                        <button className='navbar-button'>
+                            <Link href={link.href} key={link.key} className='px-[15px] py-[6px] navbar-items'>
+                                {link.text}
+                            </Link>
+                        </button>
                     ))}
                 </ul>
 
@@ -58,7 +59,6 @@ const Navbar = () => {
                     <ThemeSwitcher />
                 </div>
             </nav>
-        </div>
     )
 }
 

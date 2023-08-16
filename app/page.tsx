@@ -2,7 +2,7 @@ import About from '@/components/About'
 import Divider from '@/components/Divider'
 import Hero from '@/components/Hero'
 import MyPassion from '@/components/MyPassion'
-import Image from 'next/image'
+import Projects from '@/components/Projects'
 
 export default function Home() {
   return (
@@ -11,6 +11,7 @@ export default function Home() {
         <Divider/>
         <About/>
         <MyPassion/>
+        <Projects />
       </section>
   )
 }

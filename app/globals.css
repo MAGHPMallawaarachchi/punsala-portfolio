@@ -39,8 +39,16 @@ h1 {
     @apply dark:text-light text-dark;
   }
 
+  .bg-color{
+    @apply dark:bg-dark bg-light;
+  }
+
   .navbar-items {
-    @apply text-color uppercase text-[16px] font-semibold;
+    @apply text-color uppercase text-[16px] font-medium ;
+  }
+
+  .navbar-button {
+    @apply hover:border-[2px] hover:border-dark dark:hover:border-light rounded-full;
   }
 
   .hero-heading{
