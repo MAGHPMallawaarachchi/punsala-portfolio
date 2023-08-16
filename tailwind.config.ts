@@ -23,7 +23,8 @@ module.exports = {
         'light-gray': '#E2E2E2',
       },
       screens:{
-        'tablet':'768px',
+        'mobile':'412px',
+        'tablet':'670px',
         'laptop':'1024px',
         'desktop':'1280px',
       }

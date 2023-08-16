@@ -40,12 +40,26 @@ h1 {
   }
 
   .hero-heading{
-    @apply text-[105px] text-color uppercase leading-none;
+    @apply laptop:text-[105px] tablet:text-[75px] mobile:text-[45px] text-[35px] text-color uppercase leading-none;
   }
 
-  .font-outline {
+  .hero-name {
+    @apply text-color tablet:tracking-[8.8px] mobile:tracking-[6.5px] tracking-[5px] font-medium uppercase;
+  }
+
+  .font-outline-lg {
     -webkit-text-stroke: 3px #f8b4e3;
   }
+
+  .font-outline-sm {
+    -webkit-text-stroke: 1px #f8b4e3;
+  }
+
+}
+
+.height {
+  --navbar-height: 80px;
+  height: calc(100vh - var(--navbar-height));
 }
 
 

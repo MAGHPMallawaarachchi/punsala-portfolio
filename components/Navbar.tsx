@@ -19,7 +19,8 @@ const Navbar = () => {
     }
 
     return (
-        <nav className='flex items-center justify-between pt-12 pb-7 mx-auto max-w-7xl px-8'>
+        <div className='sticky top-0 z-50 bg-light dark:bg-dark shadow-sm'>
+            <nav className='flex items-center justify-between mx-auto max-w-7xl px-8 py-5'>
                 <Link href='/'>
                     <Image
                         src='/images/Logo.svg'
@@ -29,8 +30,8 @@ const Navbar = () => {
                     />
                 </Link>
 
-                <ul className='hidden laptop:flex gap-[10px] text-dark dark:text-light '>
-                    {NavLinks.map((link)=>(
+                <ul className='hidden laptop:flex gap-[10px] text-dark dark:text-light'>
+                    {NavLinks.map((link) => (
                         <Link href={link.href} key={link.key} className='px-[15px] py-[4px] uppercase text-[16px] font-semibold'>
                             {link.text}
                         </Link>
@@ -45,18 +46,19 @@ const Navbar = () => {
 
                 <div className='hidden laptop:flex flex-row gap-[15px] items-center'>
                     <a href="https://www.instagram.com/punsalaa_/" key="Instagram" target="_blank" rel="noopener noreferrer">
-                        <Instagram/>
+                        <Instagram />
                     </a>
                     <a href="https://www.linkedin.com/in/punsala/" key="Linkedin" target="_blank" rel="noopener noreferrer">
-                        <Linkedin/>
+                        <Linkedin />
                     </a>
                     <a href="https://github.com/MAGHPMallawaarachchi" key="Github" target="_blank" rel="noopener noreferrer">
-                        <Github/>
-                    </a>        
-                    
-                    <ThemeSwitcher/>
+                        <Github />
+                    </a>
+
+                    <ThemeSwitcher />
                 </div>
-                </nav>
+            </nav>
+        </div>
     )
 }
 

@@ -14,7 +14,7 @@ type Props = {
 
 const HamburgerMenu = ({ onClose }:Props) => {
   return (
-    <div className="laptop:hidden flex flex-col justify-between fixed top-0 left-0 w-full h-screen dark:bg-black bg-white bg-opacity-95 px-8 py-12">
+    <div className="laptop:hidden flex flex-col justify-between fixed top-0 left-0 w-full h-screen dark:bg-black bg-white bg-opacity-95 px-8 py-5">
         <div className='flex items-center justify-between'>
             <Link href='/'>
                 <Image

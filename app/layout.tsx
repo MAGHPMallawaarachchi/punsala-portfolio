@@ -23,10 +23,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${brasika.variable} font-serif`}>
-        <body className='justify-center w-full h-screen dark:bg-dark bg-light'>
+        <body className='justify-center w-full h-screen dark:bg-dark bg-light flex flex-col'>
           <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <Navbar/>
-          <main>
+          <main className='flex-grow'>
             {children}
           </main>
           </ThemeProvider>       
