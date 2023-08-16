@@ -45,6 +45,10 @@ const Hero = () => {
             </div>
         </div>
 
+        <div>
+            
+        </div>
+
     </section>
   )
 }
