@@ -46,7 +46,7 @@ const HamburgerMenu = ({ onClose }:Props) => {
                 </button>
             ))}
         </ul>
-        <div className='flex justify-between mb-5'>
+        <div className='flex justify-between mb-14'>
             <div className='flex gap-4'>
                 <a href="https://www.instagram.com/punsalaa_/" key="Instagram" target="_blank" rel="noopener noreferrer">
                     <Instagram/>
