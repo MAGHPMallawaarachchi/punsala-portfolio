@@ -4,12 +4,9 @@ import { NavLinks } from '@/constants'
 import Image from 'next/image'
 import Link from 'next/link'
 import React, { useState } from 'react'
-import Menu from './icons/Menu'
-import Instagram from './icons/Instagram'
-import Linkedin from './icons/Linkedin'
 import { ThemeSwitcher } from './ThemeSwitcher'
-import Github from './icons/Github'
 import HamburgerMenu from './HamburgerMenu'
+import {AiFillGithub, AiFillLinkedin, AiFillInstagram, AiOutlineMenu} from 'react-icons/ai'
 
 const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -48,23 +45,22 @@ const Navbar = () => {
                 </ul>
 
                 <button className='laptop:hidden' onClick={toggleMenu}>
-                    <Menu height={18} width={20} />
+                    <AiOutlineMenu size="28px" color="#ffffff" />
                 </button>
 
                 {isMenuOpen && <HamburgerMenu onClose={toggleMenu} />}
 
                 <div className='hidden laptop:flex flex-row gap-[15px] items-center'>
                     <a href="https://www.instagram.com/punsalaa_/" key="Instagram" target="_blank" rel="noopener noreferrer">
-                        <Instagram />
+                        <AiFillInstagram size="28px" color="#38B8FF"/>
                     </a>
                     <a href="https://www.linkedin.com/in/punsala/" key="Linkedin" target="_blank" rel="noopener noreferrer">
-                        <Linkedin />
+                        <AiFillLinkedin size="28px" color="#38B8FF" />
                     </a>
                     <a href="https://github.com/MAGHPMallawaarachchi" key="Github" target="_blank" rel="noopener noreferrer">
-                        <Github />
+                        <AiFillGithub size="28px" color="#38B8FF"/>
                     </a>
-
-                    <ThemeSwitcher />
+                    <ThemeSwitcher/>
                 </div>
             </nav>
     )

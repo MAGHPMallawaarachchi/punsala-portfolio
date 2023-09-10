@@ -1,12 +1,9 @@
 import React, { useEffect } from 'react';
-import Close from './icons/Close';
 import Link from 'next/link';
 import Image from 'next/image';
 import { NavLinks } from '@/constants';
-import Instagram from './icons/Instagram';
-import Linkedin from './icons/Linkedin';
-import Github from './icons/Github';
 import { ThemeSwitcher } from './ThemeSwitcher';
+import {AiFillGithub, AiFillLinkedin, AiFillInstagram, AiOutlineClose} from 'react-icons/ai'
 
 type Props = {
     onClose: () => void;
@@ -34,7 +31,7 @@ const HamburgerMenu = ({ onClose }:Props) => {
                 />
             </Link>
             <button className='laptop:hidden' onClick={onClose}>
-                <Close height={18} />
+                <AiOutlineClose size="28px" color="#ffffff" />
             </button>
         </div>
         <ul className='flex flex-col items-center gap-10'>
@@ -49,13 +46,13 @@ const HamburgerMenu = ({ onClose }:Props) => {
         <div className='flex justify-between mb-14'>
             <div className='flex gap-4'>
                 <a href="https://www.instagram.com/punsalaa_/" key="Instagram" target="_blank" rel="noopener noreferrer">
-                    <Instagram/>
+                    <AiFillInstagram size="28px" color="#38B8FF"/>
                 </a>
                 <a href="https://www.linkedin.com/in/punsala/" key="Linkedin" target="_blank" rel="noopener noreferrer">
-                    <Linkedin/>
+                    <AiFillLinkedin size="28px" color="#38B8FF"/>
                 </a>
                 <a href="https://github.com/MAGHPMallawaarachchi" key="Github" target="_blank" rel="noopener noreferrer">
-                    <Github/>
+                    <AiFillGithub size="28px" color="#38B8FF"/>
                 </a>  
             </div>
             <ThemeSwitcher/>

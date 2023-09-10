@@ -1,8 +1,7 @@
 "use client";
 import { useState, useEffect } from "react";
 import { useTheme } from "next-themes";
-import Moon from "./icons/Moon";
-import Sun from "./icons/Sun";
+import {BsFillMoonStarsFill, BsFillSunFill} from 'react-icons/bs'
 
 export const ThemeSwitcher = () => {
   const [mounted, setMounted] = useState(false);
@@ -42,7 +41,7 @@ export const ThemeSwitcher = () => {
         className="w-[26px] h-[26px] absolute rounded-full left-1 top-1/2 transform -translate-y-1/2 peer-checked:left-6 transition-all duration-500 flex items-center justify-center"
         style={circleStyle}
       >
-        {resolvedTheme === "dark" ? <Moon /> : <Sun />}
+        {resolvedTheme === "dark" ? <BsFillMoonStarsFill color="#F8B4E3" size="15"/> : <BsFillSunFill color="#38B8FF" size="18"/>}
       </span>
     </label>
   );
