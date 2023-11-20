@@ -72,11 +72,11 @@ h1 {
   }
 
   .heading {
-    @apply text-color tablet:text-[60px] text-[40px];
+    @apply text-color tablet:text-6xl text-4xl;
   }
 
   .button-text {
-    @apply uppercase text-dark tablet:text-[18px] text-[14px] font-bold leading-none py-[10px];
+    @apply uppercase text-dark tablet:text-base text-sm font-bold leading-none py-1;
   }
 
   .button {
@@ -88,7 +88,7 @@ h1 {
   }
 
   .paragraph {
-    @apply text-color text-left tablet:leading-[36px] leading-[25px] tablet:text-[20px] text-[16px] font-normal ;
+    @apply dark:text-secondary-text text-dark text-left tablet:leading-9 leading-7 tablet:text-lg text-base font-normal ;
   }
 
 }

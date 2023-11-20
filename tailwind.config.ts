@@ -21,6 +21,7 @@ module.exports = {
         'light-blue': '#CEEEFF',
         'gray': '#2E2E2E',
         'light-gray': '#E2E2E2',
+        'secondary-text': '#B0B3B8',
       },
       screens:{
         'mobile':'412px',
