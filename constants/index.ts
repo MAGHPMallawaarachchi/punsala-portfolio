@@ -9,7 +9,7 @@ export const ProjectData = [
     {
         key: 'ScholarSync',
         name: 'ScholarSync',
-        category: 'Mobile Application',
+        category: 'Mobile App',
         description: 'A Flutter and Firebase mobile app designed to address common challenges faced by university students. The app provides features to help students stay organized, collaborate with peers, and be more productive.',
         image: '/images/ScholarSync.jpg',
         link: 'https://github.com/MAGHPMallawaarachchi/scholarsync-mobile-app'
