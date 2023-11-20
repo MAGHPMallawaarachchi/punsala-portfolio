@@ -31,7 +31,7 @@ const Projects = () => {
         <h1 className='heading mr-'>Projects</h1>
       </div>
       
-      <div className='flex flex-wrap laptop:justify-between justify-center'>
+      <div className='flex flex-wrap laptop:justify-between justify-center gap-16'>
         {ProjectData.slice(0, visibleProjects).map((project) => (
           <Project
             key={project.key}
@@ -52,7 +52,7 @@ const Projects = () => {
           )}
         </div>
       ) : (
-        <button className='button button-text bg-green w-[229px] mt-[30px]' onClick={loadLessProjects}>View Less</button>
+        <div></div>
       )}
     </section>
   )
