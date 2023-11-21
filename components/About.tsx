@@ -15,7 +15,7 @@ const About = () => {
             </div>
 
             <div className='laptop:w-[450px] w-full aspect-square bg-pink'>
-                <Image src='/images/portrait_1.jpg' alt='portrait' width='450' height='450' />
+                <Image src='/images/portrait.jpg' alt='portrait' width='450' height='450' className='object-cover w-full h-full'/>
             </div>
 
         </div>
