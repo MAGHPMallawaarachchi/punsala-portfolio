@@ -43,10 +43,6 @@ h1 {
     @apply dark:bg-dark bg-light;
   }
 
-  .navbar-button {
-    @apply hover:border-[2px] hover:border-dark dark:hover:border-light rounded-full;
-  }
-
   .hero-heading{
     @apply laptop:text-[105px] tablet:text-[75px] mobile:text-[45px] text-[35px] text-color uppercase leading-none;
   }

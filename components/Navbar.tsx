@@ -36,8 +36,8 @@ const Navbar = () => {
 
                 <ul className='hidden laptop:flex gap-[10px]'>
                     {NavLinks.map((link) => (
-                        <button key={link.key} className='navbar-button w-32'>
-                            <Link href={link.href} className='px-[15px] py-[6px] text-color uppercase text-base font-medium'>
+                        <button key={link.key} className='hover:border-[2px] hover:border-dark dark:hover:border-light rounded-full w-32'>
+                            <Link key={link.key} href={link.href} className='px-[15px] py-[6px] text-color uppercase text-base font-medium'>
                                 {link.text}
                             </Link>
                         </button>
