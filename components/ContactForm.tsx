@@ -3,13 +3,13 @@ import { IoMailSharp } from "react-icons/io5";
 
 const ContactForm = () => {
     return(
-        <div className='dark:bg-gray bg-light-blue border-2 border-dark w-full 3xl:rounded-[50px] rounded-[30px] mx-10 flex justify-between p-16 gap-20'>
-            <div className='flex flex-col items-start w-[42%] 3xl:gap-8 gap-4'>
+        <div className='dark:bg-gray bg-light-blue border-2 border-dark w-full 3xl:rounded-[50px] rounded-[30px] flex lg:flex-row flex-col justify-between lg:p-16 p-8 lg:gap-20 gap-10 lg:mx-10 mx-5 lg:my-0 my-20'>
+            <div className='flex flex-col items-start lg:w-[42%] 3xl:gap-8 gap-4'>
 
                 <div className='flex flex-col items-start 3xl:gap-4 gap-2'>
                     <h2 className='uppercase dark:text-light text-dark 3xl:text-3xl text-xl font-semibold'>got an idea?</h2>
-                    <h1 className='dark:text-light text-dark 3xl:text-7xl text-5xl'>Let's</h1>
-                    <h1 className='dark:text-light text-dark 3xl:text-7xl text-5xl'>Collaborate</h1>
+                    <h1 className='dark:text-light text-dark 3xl:text-7xl sm:text-5xl text-4xl'>Let's</h1>
+                    <h1 className='dark:text-light text-dark 3xl:text-7xl sm:text-5xl text-4xl'>Collaborate</h1>
                 </div>
 
                 <p className='3xl:text-xl text-base dark:text-secondary-text text-dark text-left'>You can fill out the form below and I will get back to you so we can discuss your project in more detail. Looking forward to connecting with you!</p>
@@ -17,7 +17,7 @@ const ContactForm = () => {
                 <IoMailSharp size="24px" class="dark:fill-pink fill-dark"/>
             </div>
 
-            <div className='flex items-start justify-around w-[58%]'>
+            <div className='flex items-start justify-around lg:w-[58%]'>
 
                 <form className='w-full flex flex-col 3xl:gap-8 gap-4'>
 

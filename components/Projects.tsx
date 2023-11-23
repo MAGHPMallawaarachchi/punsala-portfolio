@@ -19,19 +19,19 @@ const Projects = () => {
 
   return (
     <section className='mx-auto max-w-7xl flex flex-col justify-center items-center overflow-hidden paddings' id='projects'>
-      <div className='flex tablet:mb-[90px] mb-[30px]'>
-        <div className='hidden laptop:flex flex-col items-end'>
+      <div className='flex sm:mb-[90px] mb-[30px]'>
+        <div className='hidden lg:flex flex-col items-end'>
           <Star height={42}/>
           <Star height={22}/>
         </div>
-        <div className='flex laptop:hidden flex-col items-end'>
+        <div className='flex lg:hidden flex-col items-end'>
           <Star height={23}/>
           <Star height={14}/>
         </div>
         <h1 className='heading mr-'>Projects</h1>
       </div>
       
-      <div className='flex flex-wrap laptop:justify-between justify-center gap-16'>
+      <div className='flex flex-wrap lg:justify-between justify-center gap-16'>
         {ProjectData.slice(0, visibleProjects).map((project) => (
           <Project
             key={project.key}

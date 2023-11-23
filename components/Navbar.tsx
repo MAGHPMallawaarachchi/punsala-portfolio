@@ -17,7 +17,7 @@ const Navbar = () => {
 
     return (
             <nav className='flex items-center justify-between w-full py-5 px-8 fixed top-0 z-50 bg-color shadow-sm '>
-                <Link href='/' className='hidden tablet:flex'>
+                <Link href='/' className='hidden sm:flex'>
                     <Image
                         src='/images/Logo.svg'
                         alt='logo'
@@ -25,7 +25,7 @@ const Navbar = () => {
                         height={30}
                     />
                 </Link>
-                <Link href='/' className='tablet:hidden flex'>
+                <Link href='/' className='sm:hidden flex'>
                     <Image
                         src='/images/Logo.svg'
                         alt='logo'
@@ -34,7 +34,7 @@ const Navbar = () => {
                     />
                 </Link>
 
-                <ul className='hidden laptop:flex gap-[10px]'>
+                <ul className='hidden lg:flex gap-[10px]'>
                     {NavLinks.map((link) => (
                         <button key={link.key} className='hover:border-[2px] hover:border-dark dark:hover:border-light rounded-full w-32'>
                             <Link key={link.key} href={link.href} className='px-[15px] py-[6px] text-color uppercase text-base font-medium'>
@@ -44,13 +44,13 @@ const Navbar = () => {
                     ))}
                 </ul>
 
-                <button className='laptop:hidden' onClick={toggleMenu}>
+                <button className='lg:hidden' onClick={toggleMenu}>
                     <AiOutlineMenu size="28px" color="#ffffff" />
                 </button>
 
                 {isMenuOpen && <HamburgerMenu onClose={toggleMenu} />}
 
-                <div className='hidden laptop:flex flex-row gap-[15px] items-center'>
+                <div className='hidden lg:flex flex-row gap-[15px] items-center'>
                     <a href="https://www.instagram.com/punsalaa_/" key="Instagram" target="_blank" rel="noopener noreferrer">
                         <AiFillInstagram size="28px" color="#38B8FF"/>
                     </a>

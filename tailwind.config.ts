@@ -24,10 +24,10 @@ module.exports = {
         'secondary-text': '#B0B3B8',
       },
       screens:{
-        'mobile':'412px',
-        'tablet':'670px',
-        'laptop':'1024px',
-        'desktop':'1280px',
+        'xsm':'412px',
+        'sm':'670px',
+        'lg':'1024px',
+        'xl':'1280px',
         '2xl':'1536px',
         '3xl':'1920px',
       }

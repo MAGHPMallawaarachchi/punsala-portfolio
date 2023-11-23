@@ -16,7 +16,7 @@ const Project = ({name, category, description, link, image}: Props) => {
     
         <div className='flex flex-col items-start'>
             <h4 className='uppercase dark:text-secondary-text text-dark text-lg mb-1'>{category}</h4>
-            <h1 className='text-color tablet:text-4xl text-3xl'>{name}</h1>
+            <h1 className='text-color sm:text-4xl text-3xl'>{name}</h1>
         </div>
         <div className='h-36'>
           <p className='paragraph max-w-xl'>{description}</p>

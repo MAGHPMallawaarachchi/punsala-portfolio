@@ -44,11 +44,11 @@ h1 {
   }
 
   .hero-heading{
-    @apply laptop:text-[105px] tablet:text-[75px] mobile:text-[45px] text-[35px] text-color uppercase leading-none;
+    @apply lg:text-[105px] sm:text-[75px] xsm:text-[45px] text-[35px] text-color uppercase leading-none;
   }
 
   .hero-name {
-    @apply text-color tablet:tracking-[8.8px] mobile:tracking-[6.5px] tracking-[5px] font-medium uppercase;
+    @apply text-color sm:tracking-[8.8px] xsm:tracking-[6.5px] tracking-[5px] font-medium uppercase;
   }
 
   .font-outline-lg {
@@ -64,11 +64,11 @@ h1 {
   }
 
   .heading {
-    @apply text-color tablet:text-6xl text-4xl;
+    @apply text-color sm:text-6xl text-4xl;
   }
 
   .button-text {
-    @apply uppercase text-dark tablet:text-base text-sm font-bold leading-none py-1;
+    @apply uppercase text-dark sm:text-base text-sm font-bold leading-none py-1;
   }
 
   .button {
@@ -76,11 +76,11 @@ h1 {
   }
 
   .paddings {
-    @apply px-[30px] laptop:px-[30px] tablet:px-[60px] mobile:px-[30px] py-[90px] laptop:py-[100px] tablet:py-[100px] mobile:py-[90px];
+    @apply px-[30px] lg:px-[30px] sm:px-[60px] xsm:px-[30px] py-[90px] lg:py-[100px] sm:py-[100px] xsm:py-[90px];
   }
 
   .paragraph {
-    @apply dark:text-secondary-text text-dark text-left tablet:leading-9 leading-7 tablet:text-lg text-base font-normal ;
+    @apply dark:text-secondary-text text-dark text-left sm:leading-9 leading-7 sm:text-lg text-base font-normal ;
   }
 
 }

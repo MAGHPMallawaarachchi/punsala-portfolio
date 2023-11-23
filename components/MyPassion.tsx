@@ -2,16 +2,16 @@ import React from 'react'
 
 const MyPassion = () => {
   return (
-    <section className='mx-auto flex justify-center items-center overflow-hidden dark:bg-gray bg-light-blue tablet:rounded-[80px] rounded-[50px]'>
+    <section className='mx-auto flex justify-center items-center overflow-hidden dark:bg-gray bg-light-blue sm:rounded-[80px] rounded-[50px]'>
 
-        <div className='max-w-7xl paddings flex laptop:flex-row flex-col items-center laptop:w-full tablet:w-[80%] w-full justify-between laptop:gap-2 gap-[60px]'>
+        <div className='max-w-7xl paddings flex lg:flex-row flex-col items-center lg:w-full sm:w-[80%] w-full justify-between lg:gap-2 gap-[60px]'>
 
-            <div className='laptop:w-[500px] w-full aspect-[4/3] bg-pink'></div>
+            <div className='lg:w-[500px] w-full aspect-[4/3] bg-pink'></div>
 
-            <div className='flex flex-col laptop:justify-between laptop:w-[40%] laptop:h-[360px] laptop:gap-0 gap-8'>
+            <div className='flex flex-col lg:justify-between lg:w-[40%] lg:h-[360px] lg:gap-0 gap-8'>
 
                 <div>
-                    <h2 className='text-color tablet:text-[30px] text-[20px] uppercase leading-none font-bold'>Coding is</h2>
+                    <h2 className='text-color sm:text-[30px] text-[20px] uppercase leading-none font-bold'>Coding is</h2>
                     <h1 className='heading'>My Passion</h1>
                 </div>
 
