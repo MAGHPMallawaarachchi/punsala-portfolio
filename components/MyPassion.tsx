@@ -11,13 +11,13 @@ const MyPassion = () => {
             <div className='flex flex-col lg:justify-between lg:w-[40%] lg:h-[360px] lg:gap-0 gap-8'>
 
                 <div>
-                    <h2 className='text-color sm:text-[30px] text-[20px] uppercase leading-none font-bold'>Coding is</h2>
+                    <h2 className='dark:text-light text-dark sm:text-[30px] text-[20px] uppercase leading-none font-bold'>Coding is</h2>
                     <h1 className='heading'>My Passion</h1>
                 </div>
 
                 <p className='paragraph'>I love coding. I create solutions using code, making ideas real. Challenges excite me. I fix and improve, finding joy. Tech world amazes, making me curious.</p>
 
-                <button className='button-text button bg-pink w-[177px] mt-3'>Github</button>
+                <button className='button-text button bg-pink xsm:w-36 w-28 xsm:py-1 py-2'>Github</button>
 
             </div>
 
