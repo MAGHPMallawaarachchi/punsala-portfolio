@@ -31,7 +31,7 @@ const HamburgerMenu = ({ onClose }:Props) => {
                 />
             </Link>
             <button className='lg:hidden' onClick={onClose}>
-                <AiOutlineClose size="28px" color="#ffffff" />
+                <AiOutlineClose size="28px" class="dark:fill-light fill-dark" />
             </button>
         </div>
         <ul className='flex flex-col items-center gap-10'>
