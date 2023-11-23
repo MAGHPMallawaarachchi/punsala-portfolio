@@ -22,12 +22,14 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className={`${brasika.variable} font-serif`}>
-        <body className='w-full h-screen bg-color flex flex-col'>
+    <html lang="en" className={`${brasika.variable} font-serif h-full antialiased`}>
+        <body className='w-full h-full bg-color flex flex-col'>
           <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <Navbar/>
-          <main className='flex-grow'>
-            {children}
+          <main className='relative flex flex-col min-h-screen'>
+            <div className='flex-grow flex-1'>
+              {children}
+            </div>
           </main>
           </ThemeProvider>       
         </body>

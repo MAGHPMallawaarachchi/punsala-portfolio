@@ -16,7 +16,7 @@ const Navbar = () => {
     }
 
     return (
-            <nav className='flex items-center justify-between w-full py-5 px-8 fixed top-0 z-50 bg-color shadow-sm '>
+            <nav className='flex items-center justify-between w-full py-4 px-8 fixed top-0 z-50 inset-x-0 bg-color shadow-sm '>
                 <Link href='/' className='hidden sm:flex'>
                     <Image
                         src='/images/Logo.svg'

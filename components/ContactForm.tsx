@@ -3,7 +3,7 @@ import { IoMailSharp } from "react-icons/io5";
 
 const ContactForm = () => {
     return(
-        <div className='dark:bg-gray bg-light-blue border-2 border-dark w-full 3xl:rounded-[50px] rounded-[30px] flex lg:flex-row flex-col justify-between lg:p-16 p-8 lg:gap-20 gap-10 lg:mx-10 mx-5 lg:my-0 my-20'>
+        <div className='dark:bg-gray bg-light-blue border-2 border-dark w-full 3xl:rounded-[50px] rounded-[30px] flex lg:flex-row flex-col justify-between lg:p-16 p-8 lg:gap-20 gap-10 lg:mx-10 mx-5 my-20'>
             <div className='flex flex-col items-start lg:w-[42%] 3xl:gap-8 gap-4'>
 
                 <div className='flex flex-col items-start 3xl:gap-4 gap-2'>
