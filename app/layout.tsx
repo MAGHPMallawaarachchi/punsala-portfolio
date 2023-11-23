@@ -3,6 +3,7 @@ import { Inter } from 'next/font/google'
 import localFont from 'next/font/local'
 import { ThemeProvider } from './theme-provider'
 import Navbar from '@/components/Navbar'
+import Footer from '@/components/Footer'
 
 const brasika = localFont({
   src: '../public/fonts/brasika-display.otf',
@@ -29,6 +30,7 @@ export default function RootLayout({
           <main className='relative flex flex-col min-h-screen'>
             <div className='flex-grow flex-1'>
               {children}
+              <Footer/>
             </div>
           </main>
           </ThemeProvider>       
