@@ -11,7 +11,7 @@ type Props = {
 
 const Project = ({name, category, description, link, image}: Props) => {
   return (
-    <div className='flex flex-col gap-6 max-w-xl w-[45%]'>       
+    <div className='flex flex-col gap-6 max-w-xl lg:w-[45%] w-[100%]'>       
         <Image src={image} width={570} height={362} alt={name} className='rounded-2xl' />
     
         <div className='flex flex-col items-start gap-1'>
