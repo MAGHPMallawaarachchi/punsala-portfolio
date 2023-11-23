@@ -11,8 +11,8 @@ type Props = {
 
 const Project = ({name, category, description, link, image}: Props) => {
   return (
-    <div className='flex flex-col gap-5 max-w-xl'>       
-        <Image src={image} width={570} height={362} alt={name} className='rounded-[20px]' />
+    <div className='flex flex-col gap-6 max-w-xl w-[45%]'>       
+        <Image src={image} width={570} height={362} alt={name} className='rounded-2xl' />
     
         <div className='flex flex-col items-start gap-1'>
             <h4 className='uppercase dark:text-secondary-text text-dark text-sm sm:text-lg'>{category}</h4>
