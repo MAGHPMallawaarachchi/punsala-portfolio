@@ -20,10 +20,10 @@ const Projects = () => {
             <Star height={23}/>
             <Star height={14}/>
           </div>
-          <h1 className='heading mr-'>Projects</h1>
+          <h1 className='heading mr-4'>Projects</h1>
         </div>
         
-        <div className='flex flex-wrap lg:justify-between justify-center gap-16'>
+        <div className='flex flex-wrap gap-12 items-center'>
           {ProjectData.slice(0,4).map((project) => (
             <Project
               key={project.key}
@@ -38,7 +38,7 @@ const Projects = () => {
 
           <div className='flex sm:mt-20 mt-10'>
             <Link href='/projects'>
-              <button className='button button-text bg-green w-40 py-2 sm:py-1 xsm:mt-0 mt-5'>View More</button>
+              <button className='border-2 border-dark rounded-full uppercase text-dark text-sm font-bold bg-green w-40 py-2 sm:py-2 xsm:mt-0 mt-5'>View More</button>
             </Link>
           </div>
 

@@ -5,7 +5,7 @@ const MyPassion = () => {
   return (
     <section className=' dark:bg-gray bg-light-blue sm:rounded-[80px] rounded-[50px]'>
       <Container>
-        <div className='flex lg:flex-row flex-col justify-center items-center overflow-hidden gap-10'>
+        <div className='flex lg:flex-row flex-col justify-between items-center overflow-hidden gap-10'>
           <div className='lg:w-[50%] w-full aspect-[6/3] bg-pink lg:h-full rounded-2xl'></div>
 
           <div className='flex flex-col lg:w-[450px] gap-6'>
