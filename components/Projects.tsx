@@ -5,19 +5,9 @@ import Star from './icons/Star'
 import Project from './Project'
 import { ProjectData } from '@/constants'
 import Container from './Container'
+import Link from 'next/link'
 
 const Projects = () => {
-  const [visibleProjects, setVisibleProjects] = useState(4);
-  const maxVisibleProjects = 4;
-
-  const loadMoreProjects = () => {
-    setVisibleProjects(prevVisibleProjects => prevVisibleProjects + 4);
-  };
-
-  const loadLessProjects = () => {
-    setVisibleProjects(maxVisibleProjects);
-  };
-
   return (
     <Container>
       <section className='flex flex-col justify-center items-center overflow-hidden' id='projects'>
@@ -34,7 +24,7 @@ const Projects = () => {
         </div>
         
         <div className='flex flex-wrap lg:justify-between justify-center gap-16'>
-          {ProjectData.slice(0, visibleProjects).map((project) => (
+          {ProjectData.map((project) => (
             <Project
               key={project.key}
               name={project.name}
@@ -46,16 +36,12 @@ const Projects = () => {
           ))}
         </div>
 
-        {visibleProjects < ProjectData.length ? (
-          <div className='flex'>
-            <button className='button button-text bg-green w-[229px] mt-[30px]' onClick={loadMoreProjects}>View More</button>
-            {visibleProjects > maxVisibleProjects && (
-              <button className='button button-text bg-green w-[229px] mt-[30px] ml-[20px]' onClick={loadLessProjects}>View Less</button>
-            )}
+          <div className='flex sm:mt-20 mt-10'>
+            <Link href='/projects'>
+              <button className='button button-text bg-green w-40 py-2 sm:py-1 xsm:mt-0 mt-5'>View More</button>
+            </Link>
           </div>
-        ) : (
-          <div></div>
-        )}
+
       </section>
     </Container>
   )
