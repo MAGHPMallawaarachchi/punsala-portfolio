@@ -18,7 +18,7 @@ const Project = ({name, category, description, link, image}: Props) => {
             <h4 className='uppercase dark:text-secondary-text text-dark text-sm sm:text-lg'>{category}</h4>
             <h1 className='dark:text-light text-dark sm:text-4xl text-3xl'>{name}</h1>
         </div>
-        <div className='h-36'>
+        <div className='h-20'>
           <p className='paragraph'>{description}</p>
         </div>
         <button className='button button-text bg-blue w-40 py-2 sm:py-1 xsm:mt-0 mt-5'>
