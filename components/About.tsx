@@ -12,8 +12,8 @@ const About = () => {
               <button className='button-text button bg-green xsm:w-36 w-28 xsm:py-1 py-2'>LinkedIn</button>
           </div>
 
-          <div className='lg:w-[450px] w-full aspect-square bg-pink'>
-              <Image src='/images/portrait.jpg' alt='portrait' width='450' height='450' className='object-cover w-full h-full'/>
+          <div className='lg:w-[450px] w-full aspect-square rounded-2xl'>
+              <Image src='/images/portrait.jpg' alt='portrait' width='450' height='450' className='object-cover w-full h-full rounded-2xl'/>
           </div>
       </section>
     </Container>
