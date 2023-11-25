@@ -24,7 +24,7 @@ const Projects = () => {
         </div>
         
         <div className='flex flex-wrap lg:justify-between justify-center gap-16'>
-          {ProjectData.map((project) => (
+          {ProjectData.slice(0,4).map((project) => (
             <Project
               key={project.key}
               name={project.name}
