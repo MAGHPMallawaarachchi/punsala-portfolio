@@ -6,24 +6,43 @@ import Project from './Project'
 import { ProjectData } from '@/constants'
 import Container from './Container'
 import Link from 'next/link'
+import { LuSparkle } from "react-icons/lu";
 
 const Projects = () => {
   return (
     <Container>
-      <section className='flex flex-col justify-center items-center overflow-hidden' id='projects'>
-        <div className='flex sm:mb-20 mb-16'>
-          <div className='hidden lg:flex flex-col items-end'>
-            <Star height={42}/>
-            <Star height={22}/>
+      <section className='flex flex-col justify-center items-center' id='projects'>
+
+        <div className='flex justify-between w-full'>
+
+          <div className='flex items-center sm:mb-20 mb-16'>
+            <div className='flex flex-col'>
+              <div className='hidden lg:flex flex-col items-end'>
+                <LuSparkle size="72px" class="fill-blue stroke-[0.6px] stroke-dark -mb-6" color="#38B8FF"/>
+                <LuSparkle size="46px" class="fill-blue stroke-[0.8px] stroke-dark" color="#38B8FF"/>
+              </div>
+
+              <div className='flex lg:hidden flex-col items-end'>
+                <LuSparkle size="62px" class="fill-blue stroke-[0.6px] stroke-dark -mb-5" color="#38B8FF"/>
+                <LuSparkle size="36px" class="fill-blue stroke-[0.8px] stroke-dark" color="#38B8FF"/>
+              </div>
+              <div className='h-3'></div>
+            </div>
+            <div>
+                <h2 className='dark:text-light text-dark sm:text-4xl text-2xl leading-none'>My Latest</h2>
+                <h1 className='dark:text-light text-dark sm:text-[80px] text-[60px] sm:tracking-[4px] tracking-[3px] leading-none'>Projects</h1>
+            </div>
           </div>
-          <div className='flex lg:hidden flex-col items-end'>
-            <Star height={23}/>
-            <Star height={14}/>
+
+          <div className='sm:mt-20 mt-10 sm:flex hidden'>
+            <Link href='/projects'>
+              <button className='button-text button bg-blue xsm:w-36 w-28 xsm:py-1 py-2'>View All</button>
+            </Link>
           </div>
-          <h1 className='heading mr-4'>Projects</h1>
+
         </div>
         
-        <div className='flex flex-wrap gap-12 items-center'>
+        <div className='flex flex-wrap gap-12 items-center lg:justify-between justify-center w-full'>
           {ProjectData.slice(0,4).map((project) => (
             <Project
               key={project.key}
@@ -36,11 +55,7 @@ const Projects = () => {
           ))}
         </div>
 
-          <div className='flex sm:mt-20 mt-10'>
-            <Link href='/projects'>
-              <button className='border-2 border-dark rounded-full uppercase text-dark text-sm font-bold bg-green w-40 py-2 sm:py-2 xsm:mt-0 mt-5'>View More</button>
-            </Link>
-          </div>
+          
 
       </section>
     </Container>
