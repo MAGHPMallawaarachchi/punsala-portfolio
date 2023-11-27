@@ -1,7 +1,6 @@
 "use client"
 
 import React, { useState } from 'react'
-import Star from './icons/Star'
 import Project from './Project'
 import { ProjectData } from '@/constants'
 import Container from './Container'
