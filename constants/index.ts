@@ -16,7 +16,7 @@ export const ProjectData = [
     },
     {
         key: 'SFD23',
-        name: "SFD'23",
+        name: "SFD Website",
         category: 'Frontend',
         description: "Sri Lanka's Software Freedom Day 2023 website, organized by the NSBM FOSS community.",
         image: '/images/SFD23.jpg',

@@ -36,7 +36,7 @@ const Projects = () => {
 
           <div className='sm:flex hidden'>
             <Link href='/projects'>
-              <button className='button-text button bg-blue xsm:w-36 w-28 xsm:py-1 py-2'>View All</button>
+              <button className='button-text button bg-blue xsm:w-36 w-28 py-2'>View All</button>
             </Link>
           </div>
 
