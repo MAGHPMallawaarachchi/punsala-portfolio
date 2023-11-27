@@ -9,9 +9,9 @@ const MyPassion = () => {
           <div className='lg:w-[50%] w-full aspect-[6/3] bg-pink lg:h-full rounded-2xl'></div>
 
           <div className='flex flex-col lg:w-[450px] gap-6'>
-            <div className='gap-2'>
-              <h2 className='dark:text-light text-dark sm:text-2xl text-xl uppercase leading-none font-semibold'>Coding is</h2>
-              <h1 className='heading'>My Passion</h1>
+            <div>
+              <h2 className='dark:text-light text-dark sm:text-4xl text-2xl leading-none'>Coding is</h2>
+              <h1 className='dark:text-light text-dark sm:text-[80px] text-[60px] sm:tracking-[4px] tracking-[3px] leading-none'>My Passion</h1>
             </div>
 
             <p className='paragraph'>I love coding. I create solutions using code, making ideas real. Challenges excite me. I fix and improve, finding joy. Tech world amazes, making me curious.</p>
