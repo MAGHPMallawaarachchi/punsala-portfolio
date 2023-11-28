@@ -18,24 +18,35 @@ const Navbar = () => {
 
     return (
             <nav className='flex items-center justify-between w-full py-4 px-8 fixed top-0 z-50 inset-x-0 bg-color shadow-sm '>
-                <Link href='/' className='hidden sm:flex'>
-                    <Image
-                        src='/images/Logo.svg'
-                        alt='logo'
-                        width={160}
-                        height={30}
-                    />
-                </Link>
-                <Link href='/' className='sm:hidden flex'>
-                    <Image
-                        src='/images/Logo.svg'
-                        alt='logo'
-                        width={113}
-                        height={25}
-                    />
-                </Link>
+                <motion.div
+                    initial={{y: -20, opacity: 0}}
+                    animate={{y: 0, opacity: 1}}
+                    transition={{duration: 0.8, ease: 'easeOut', delay: 0.1, type: 'spring', stiffness: 100}}
+                >
+                    <Link href='/' className='hidden sm:flex'>
+                        <Image
+                            src='/images/Logo.svg'
+                            alt='logo'
+                            width={160}
+                            height={30}
+                        />
+                    </Link>
+                    <Link href='/' className='sm:hidden flex'>
+                        <Image
+                            src='/images/Logo.svg'
+                            alt='logo'
+                            width={113}
+                            height={25}
+                        />
+                    </Link>
+                </motion.div>
 
-                <ul className='hidden lg:flex gap-[10px]'>
+                <motion.ul 
+                    className='hidden lg:flex gap-[10px]'
+                    initial={{y: -50, opacity: 0}}
+                    animate={{y: 0, opacity: 1}}
+                    transition={{duration: 0.8, ease: 'easeOut', delay: 0.3, type: 'spring', stiffness: 100}}
+                >
                     {NavLinks.map((link) => (
                         <button key={link.key} className='hover:border-[2px] hover:border-dark dark:hover:border-light rounded-full w-32'>
                             <Link key={link.key} href={link.href} className='px-[15px] py-[6px] dark:text-light text-dark uppercase text-base dark:font-medium font-semibold'>
@@ -43,7 +54,7 @@ const Navbar = () => {
                             </Link>
                         </button>
                     ))}
-                </ul>
+                </motion.ul>
 
                 <button className='lg:hidden' onClick={toggleMenu}>
                     <AiOutlineMenu size="28px" className="dark:fill-light fill-dark" />
@@ -51,7 +62,12 @@ const Navbar = () => {
 
                 {isMenuOpen && <HamburgerMenu onClose={toggleMenu} />}
 
-                <div className='hidden lg:flex flex-row gap-[15px] items-center'>
+                <motion.div 
+                    className='hidden lg:flex flex-row gap-[15px] items-center'
+                    initial={{y: -50, opacity: 0}}
+                    animate={{y: 0, opacity: 1}}
+                    transition={{duration: 0.8, ease: 'easeOut', delay: 0.5, type: 'spring', stiffness: 100}}
+                >
                     <motion.a href="https://www.instagram.com/punsalaa_/" key="Instagram" target="_blank" rel="noopener noreferrer"
                         whileHover={{ scale: 1.1 }}
                         whileTap={{ scale: 0.9 }}
@@ -85,7 +101,7 @@ const Navbar = () => {
                         <AiFillMediumCircle size="28px" color="#38B8FF"/>
                     </motion.a>
                     <ThemeSwitcher/>
-                </div>
+                </motion.div>
             </nav>
     )
 }
