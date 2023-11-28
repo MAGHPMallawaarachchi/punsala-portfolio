@@ -13,7 +13,7 @@ const About = () => {
                 <h1 className='dark:text-light text-dark sm:text-[80px] text-[60px] sm:tracking-[4px] tracking-[3px] leading-none'>Punsala</h1>
               </div>
               <p className='paragraph'>I'm a Software Engineering student at NSBM Green University, with a strong interest in full-stack development. I am eager to learn and grow as a software engineer, and I am excited to contribute my skills and knowledge to a team that is developing innovative and impactful software products.</p>
-              <Button text='linkedin' color='#41C177' link='https://www.linkedin.com/in/punsala/'></Button>
+              <Button text='linkedin' color='green' link='https://www.linkedin.com/in/punsala/'></Button>
           </div>
 
           <div className='lg:w-[450px] w-full aspect-square rounded-2xl'>

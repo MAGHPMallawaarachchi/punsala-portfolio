@@ -16,7 +16,7 @@ const MyPassion = () => {
             </div>
 
             <p className='paragraph'>I love coding. I create solutions using code, making ideas real. Challenges excite me. I fix and improve, finding joy. Tech world amazes, making me curious.</p>
-            <Button text='github' color='#F8B4E3' link='https://github.com/MAGHPMallawaarachchi'></Button>
+            <Button text='github' color='pink' link='https://github.com/MAGHPMallawaarachchi'></Button>
           </div>
 
         </div>

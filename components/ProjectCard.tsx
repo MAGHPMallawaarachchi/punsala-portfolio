@@ -29,7 +29,7 @@ const ProjectCard = ({name, category, description, link, image, techStack}:Props
                         </li>
                     ))}
                 </ul>
-                <Button text='view project' color='#38B8FF' link={link}></Button>
+                <Button text='view project' color='blue' link={link}></Button>
             </div>
         </div>
     )
