@@ -35,7 +35,13 @@ const Projects = () => {
           </div>
 
           <div className='sm:flex hidden'>
-          <Button text='view all' color='#38B8FF' link='/projects'></Button>
+            <Link href='/projects'>
+              <button
+                className="bg-blue uppercase text-dark sm:text-base text-sm font-bold leading-none border-2 border-dark rounded-full sm:w-[160px] w-[120px] py-[5px]"
+              >
+                view all
+              </button>
+            </Link>
           </div>
 
         </div>
@@ -54,7 +60,13 @@ const Projects = () => {
         </div>
 
         <div className='sm:hidden flex'>
-        <Button text='view all' color='#38B8FF' link='/projects'></Button>
+        <Link href='/projects'>
+          <button
+            className="bg-blue uppercase text-dark sm:text-base text-sm font-bold leading-none border-2 border-dark rounded-full sm:w-[160px] w-[120px] py-[5px]"
+          >
+            view all
+          </button>
+        </Link>
         </div>
 
       </section>
