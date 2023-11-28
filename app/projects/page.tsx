@@ -46,9 +46,9 @@ export default function ProjectsPage() {
                 </div>
 
                 <div className='flex flex-col lg:gap-[100px] gap-[60px] items-center'>
-                    {filteredProjects.map((project) => (
+                    {filteredProjects.map((project,key) => (
                         <ProjectCard
-                            key={project.key}
+                            key={key}
                             name={project.name}
                             category={project.category}
                             description={project.description}
