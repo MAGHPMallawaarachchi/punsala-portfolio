@@ -1,14 +1,24 @@
+"use client"
+
+import React, { useState } from 'react';
+
 import Container from '@/components/Container';
 import FilterButton from '@/components/FilterButton';
-import Project from '@/components/Project';
 import ProjectCard from '@/components/ProjectCard';
-import Star from '@/components/icons/Star';
 import { ProjectData, categories } from '@/constants';
-import Link from 'next/link';
-import React from 'react';
 import { LuSparkle } from 'react-icons/lu';
 
-export default function ProjectsPage(){
+export default function ProjectsPage() {
+    const [selectedCategory, setSelectedCategory] = useState(null);
+
+    const filteredProjects = selectedCategory === null
+      ? ProjectData
+      : ProjectData.filter((project) => project.category === selectedCategory);
+
+    const handleFilterButtonClick = (category: any) => {
+        setSelectedCategory(category === selectedCategory ? null : category);
+    };
+
     return(
         <Container>
             <section className='flex flex-col items-center gap-12 sm:gap-[80px] mt-[30px]' id='projects'>
@@ -31,12 +41,12 @@ export default function ProjectsPage(){
                 
                 <div className='flex gap-[20px]'>
                     {categories.map((category) => (
-                        <FilterButton text={category.text}/>
+                        <FilterButton active={category.text === selectedCategory} text={category.text} onClick={() => handleFilterButtonClick(category.text)} />
                     ))}
                 </div>
 
                 <div className='flex flex-col lg:gap-[100px] gap-[60px] items-center'>
-                    {ProjectData.map((project) => (
+                    {filteredProjects.map((project) => (
                         <ProjectCard
                             key={project.key}
                             name={project.name}
