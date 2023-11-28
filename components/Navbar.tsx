@@ -7,6 +7,7 @@ import React, { useState } from 'react'
 import { ThemeSwitcher } from './ThemeSwitcher'
 import HamburgerMenu from './HamburgerMenu'
 import {AiFillGithub, AiFillLinkedin, AiFillInstagram, AiOutlineMenu, AiFillMediumCircle} from 'react-icons/ai'
+import { motion } from 'framer-motion'
 
 const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -51,18 +52,38 @@ const Navbar = () => {
                 {isMenuOpen && <HamburgerMenu onClose={toggleMenu} />}
 
                 <div className='hidden lg:flex flex-row gap-[15px] items-center'>
-                    <a href="https://www.instagram.com/punsalaa_/" key="Instagram" target="_blank" rel="noopener noreferrer">
+                    <motion.a href="https://www.instagram.com/punsalaa_/" key="Instagram" target="_blank" rel="noopener noreferrer"
+                        whileHover={{ scale: 1.1 }}
+                        whileTap={{ scale: 0.9 }}
+                        transition={{ duration: 0.2 }}
+                        style={{imageRendering: "pixelated"}}
+                    >
                         <AiFillInstagram size="28px" color="#38B8FF"/>
-                    </a>
-                    <a href="https://www.linkedin.com/in/punsala/" key="Linkedin" target="_blank" rel="noopener noreferrer">
+                    </motion.a>
+                    <motion.a href="https://www.linkedin.com/in/punsala/" key="Linkedin" target="_blank" rel="noopener noreferrer"
+                        whileHover={{ scale: 1.1 }}
+                        whileTap={{ scale: 0.9 }}
+                        transition={{ duration: 0.2 }}
+                        style={{imageRendering: "pixelated"}}
+                    >
                         <AiFillLinkedin size="28px" color="#38B8FF" />
-                    </a>
-                    <a href="https://github.com/MAGHPMallawaarachchi" key="Github" target="_blank" rel="noopener noreferrer">
+                    </motion.a>
+                    <motion.a href="https://github.com/MAGHPMallawaarachchi" key="Github" target="_blank" rel="noopener noreferrer"
+                        whileHover={{ scale: 1.1 }}
+                        whileTap={{ scale: 0.9 }}
+                        transition={{ duration: 0.2 }}
+                        style={{imageRendering: "pixelated"}}
+                    >
                         <AiFillGithub size="28px" color="#38B8FF"/>
-                    </a>
-                    <a href="https://medium.com/@punsala" key="Medium" target="_blank" rel="noopener noreferrer">
+                    </motion.a>
+                    <motion.a href="https://medium.com/@punsala" key="Medium" target="_blank" rel="noopener noreferrer"
+                        whileHover={{ scale: 1.1 }}
+                        whileTap={{ scale: 0.9 }}
+                        transition={{ duration: 0.2 }}
+                        style={{imageRendering: "pixelated"}}
+                    >
                         <AiFillMediumCircle size="28px" color="#38B8FF"/>
-                    </a>
+                    </motion.a>
                     <ThemeSwitcher/>
                 </div>
             </nav>
