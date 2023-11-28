@@ -1,5 +1,6 @@
 import React from 'react'
 import Container from './Container'
+import Button from './Button'
 
 const MyPassion = () => {
   return (
@@ -15,8 +16,7 @@ const MyPassion = () => {
             </div>
 
             <p className='paragraph'>I love coding. I create solutions using code, making ideas real. Challenges excite me. I fix and improve, finding joy. Tech world amazes, making me curious.</p>
-            <button className='button-text button bg-pink xsm:w-36 w-28 py-2'>Github</button>  
-
+            <Button text='github' color='#F8B4E3' link='https://github.com/MAGHPMallawaarachchi'></Button>
           </div>
 
         </div>

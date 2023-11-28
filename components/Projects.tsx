@@ -6,6 +6,7 @@ import { ProjectData } from '@/constants'
 import Container from './Container'
 import Link from 'next/link'
 import { LuSparkle } from "react-icons/lu";
+import Button from './Button'
 
 const Projects = () => {
   return (
@@ -34,9 +35,7 @@ const Projects = () => {
           </div>
 
           <div className='sm:flex hidden'>
-            <Link href='/projects'>
-              <button className='button-text button bg-blue xsm:w-36 w-28 py-2'>View All</button>
-            </Link>
+          <Button text='view all' color='#38B8FF' link='/projects'></Button>
           </div>
 
         </div>
@@ -55,9 +54,7 @@ const Projects = () => {
         </div>
 
         <div className='sm:hidden flex'>
-          <Link href='/projects'>
-            <button className='button-text button bg-blue xsm:w-36 w-28 py-2'>View All</button>
-          </Link>
+        <Button text='view all' color='#38B8FF' link='/projects'></Button>
         </div>
 
       </section>
