@@ -92,6 +92,7 @@ const About = () => {
                   repeat: Infinity,
                   repeatType: 'reverse',
                   duration: 0.5,
+                  delay: 0.2,
                 }}
               >
                 <LuSparkle size="72px" className="fill-pink stroke-[0.6px] stroke-dark -mb-6 z-20" color="#38B8FF"/>
