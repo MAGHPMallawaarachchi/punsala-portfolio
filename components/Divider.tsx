@@ -36,11 +36,10 @@ const Divider = () => {
       <div className='flex justify-between gap-2'>
         {Array.from({ length: numRepeat }, (_, index) => (
           <div key={index} className='flex gap-1 items-center'>
-            <Star height={17} />
             <Image 
-              src='/images/Punsala.svg'
+              src='/images/Logo.svg'
               alt='Punsala'
-              width={81}
+              width={120}
               height={17}
             />
           </div>
