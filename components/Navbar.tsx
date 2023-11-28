@@ -21,7 +21,7 @@ const Navbar = () => {
                 <motion.div
                     initial={{y: -20, opacity: 0}}
                     animate={{y: 0, opacity: 1}}
-                    transition={{duration: 0.8, ease: 'easeOut', delay: 0.1, type: 'spring', stiffness: 100}}
+                    transition={{duration: 0.8, delay: 0.1, type: 'spring', stiffness: 100}}
                 >
                     <Link href='/' className='hidden sm:flex'>
                         <Image
@@ -45,7 +45,7 @@ const Navbar = () => {
                     className='hidden lg:flex gap-[10px]'
                     initial={{y: -50, opacity: 0}}
                     animate={{y: 0, opacity: 1}}
-                    transition={{duration: 0.8, ease: 'easeOut', delay: 0.3, type: 'spring', stiffness: 100}}
+                    transition={{duration: 0.8, delay: 0.3, type: 'spring', stiffness: 100}}
                 >
                     {NavLinks.map((link) => (
                         <button key={link.key} className='hover:border-[2px] hover:border-dark dark:hover:border-light rounded-full w-32'>
@@ -66,7 +66,7 @@ const Navbar = () => {
                     className='hidden lg:flex flex-row gap-[15px] items-center'
                     initial={{y: -50, opacity: 0}}
                     animate={{y: 0, opacity: 1}}
-                    transition={{duration: 0.8, ease: 'easeOut', delay: 0.5, type: 'spring', stiffness: 100}}
+                    transition={{duration: 0.8, delay: 0.5, type: 'spring', stiffness: 100}}
                 >
                     <motion.a href="https://www.instagram.com/punsalaa_/" key="Instagram" target="_blank" rel="noopener noreferrer"
                         whileHover={{ scale: 1.1 }}
