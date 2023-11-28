@@ -18,7 +18,7 @@ const About = () => {
           </div>
 
           <div className='flex items-end relative px-6'>
-            <div className='flex flex-col items-end absolute top-0 -right-3'>
+            <div className='flex flex-col items-end absolute -top-2 -right-3'>
               <LuSparkle size="72px" className="fill-pink stroke-[0.6px] stroke-dark -mb-6 z-20" color="#38B8FF"/>
             </div>
 
