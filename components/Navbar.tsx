@@ -45,7 +45,7 @@ const Navbar = () => {
                 </ul>
 
                 <button className='lg:hidden' onClick={toggleMenu}>
-                    <AiOutlineMenu size="28px" class="dark:fill-light fill-dark" />
+                    <AiOutlineMenu size="28px" className="dark:fill-light fill-dark" />
                 </button>
 
                 {isMenuOpen && <HamburgerMenu onClose={toggleMenu} />}

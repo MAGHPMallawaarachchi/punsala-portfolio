@@ -14,7 +14,7 @@ const ContactForm = () => {
 
                 <p className='3xl:text-xl text-base dark:text-secondary-text text-dark text-left'>You can fill out the form below and I will get back to you so we can discuss your project in more detail. Looking forward to connecting with you!</p>
 
-                <IoMailSharp size="24px" class="dark:fill-pink fill-dark"/>
+                <IoMailSharp size="24px" className="dark:fill-pink fill-dark"/>
             </div>
 
             <div className='flex items-start justify-around lg:w-[58%]'>

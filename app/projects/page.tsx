@@ -25,13 +25,13 @@ export default function ProjectsPage() {
                 <div className='flex items-center'>
                     <div className='flex flex-col'>
                         <div className='hidden lg:flex flex-col items-end'>
-                            <LuSparkle size="72px" class="fill-blue stroke-[0.6px] stroke-dark -mb-6" color="#38B8FF"/>
-                            <LuSparkle size="46px" class="fill-blue stroke-[0.8px] stroke-dark" color="#38B8FF"/>
+                            <LuSparkle size="72px" className="fill-blue stroke-[0.6px] stroke-dark -mb-6" color="#38B8FF"/>
+                            <LuSparkle size="46px" className="fill-blue stroke-[0.8px] stroke-dark" color="#38B8FF"/>
                         </div>
 
                         <div className='flex lg:hidden flex-col items-end'>
-                            <LuSparkle size="62px" class="fill-blue stroke-[0.6px] stroke-dark -mb-5" color="#38B8FF"/>
-                            <LuSparkle size="36px" class="fill-blue stroke-[0.8px] stroke-dark" color="#38B8FF"/>
+                            <LuSparkle size="62px" className="fill-blue stroke-[0.6px] stroke-dark -mb-5" color="#38B8FF"/>
+                            <LuSparkle size="36px" className="fill-blue stroke-[0.8px] stroke-dark" color="#38B8FF"/>
                         </div>
                         <div className='h-3'></div>
                     </div>
