@@ -6,7 +6,7 @@ const Footer = () => {
     return(
         <footer className=" flex flex-col py-4 px-6 gap-4">
             <hr></hr>
-            <div className="flex justify-between items-center">
+            <div className="flex sm:flex-row flex-col justify-between items-center sm:gap-0 gap-2">
                 <Image
                     src='/images/Logo.svg'
                     alt='logo'
@@ -20,9 +20,9 @@ const Footer = () => {
                         </Link>
                     ))}
                 </div>
-                <div className="flex flex-col">
-                    <p className="uppercase text-xs dark:text-secondary-text text-dark">©2023 Hasini Punsala</p>
-                    <p className="uppercase text-xs dark:text-secondary-text text-dark">All Rights Reserved</p>
+                <div className="flex sm:flex-col flex-row sm:gap-0 gap-8">
+                    <p className="uppercase sm:text-xs text-[8px] dark:text-secondary-text text-dark">©2023 Hasini Punsala</p>
+                    <p className="uppercase sm:text-xs text-[8px] dark:text-secondary-text text-dark">All Rights Reserved</p>
                 </div>
             </div>
         </footer>
