@@ -1,10 +1,14 @@
+"use client"
+
 import React from 'react'
 import Image from 'next/image'
 import Container from './Container'
 import Button from './Button'
 import { LuSparkle } from 'react-icons/lu'
+import { motion } from 'framer-motion'
 
 const About = () => {
+
   return (
     <Container>
       <section className='flex lg:flex-row flex-col items-center overflow-hidden justify-between gap-10' id='about'> 
@@ -18,15 +22,63 @@ const About = () => {
           </div>
 
           <div className='flex items-end relative px-6'>
-            <div className='flex flex-col items-end absolute -top-2 -right-3'>
+            <motion.div 
+              className='flex flex-col items-end absolute -top-2 -right-3'
+              initial={{
+                rotate: 5,
+              }}
+              animate={{
+                rotate: -5,
+              }}
+              transition={{
+                type: 'tween',
+                ease: 'easeInOut',
+                repeat: Infinity,
+                repeatType: 'reverse',
+                duration: 0.5,
+              }}
+            >
               <LuSparkle size="72px" className="fill-pink stroke-[0.6px] stroke-dark -mb-6 z-20" color="#38B8FF"/>
-            </div>
+            </motion.div>
 
             <Image src='/images/portrait.jpg' alt='portrait' width='450' height='450' className='object-cover h-full lg:w-[450px] w-full aspect-square rounded-2xl mt-4 mb-8'/>
 
             <div className='flex flex-col items-end absolute bottom-0 -left-4'>
-              <LuSparkle size="72px" className="fill-pink stroke-[0.6px] stroke-dark -mb-6 z-20" color="#38B8FF"/>
-              <LuSparkle size="46px" className="fill-pink stroke-[0.8px] stroke-dark z-20" color="#38B8FF"/>
+              <motion.div
+                initial={{
+                  rotate: -5,
+                }}
+                animate={{
+                  rotate: 5,
+                }}
+                transition={{
+                  type: 'tween',
+                  ease: 'easeInOut',
+                  repeat: Infinity,
+                  repeatType: 'reverse',
+                  duration: 0.5,
+                }}
+              >
+                <LuSparkle size="72px" className="fill-pink stroke-[0.6px] stroke-dark -mb-6 z-20" color="#38B8FF"/>
+              </motion.div>
+
+              <motion.div
+                initial={{
+                  rotate: 5,
+                }}
+                animate={{
+                  rotate: -5,
+                }}
+                transition={{
+                  type: 'tween',
+                  ease: 'easeInOut',
+                  repeat: Infinity,
+                  repeatType: 'reverse',
+                  duration: 0.5,
+                }}
+              >
+                <LuSparkle size="46px" className="fill-pink stroke-[0.8px] stroke-dark z-20" color="#38B8FF"/>
+              </motion.div>
             </div>
           </div>
 
