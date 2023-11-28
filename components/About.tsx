@@ -2,6 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 import Container from './Container'
 import Button from './Button'
+import { LuSparkle } from 'react-icons/lu'
 
 const About = () => {
   return (
@@ -16,9 +17,19 @@ const About = () => {
               <Button text='linkedin' color='green' link='https://www.linkedin.com/in/punsala/'></Button>
           </div>
 
-          <div className='lg:w-[450px] w-full aspect-square rounded-2xl'>
-              <Image src='/images/portrait.jpg' alt='portrait' width='450' height='450' className='object-cover w-full h-full rounded-2xl'/>
+          <div className='flex items-end relative px-6'>
+            <div className='flex flex-col items-end absolute top-0 -right-3'>
+              <LuSparkle size="72px" className="fill-pink stroke-[0.6px] stroke-dark -mb-6 z-20" color="#38B8FF"/>
+            </div>
+
+            <Image src='/images/portrait.jpg' alt='portrait' width='450' height='450' className='object-cover h-full lg:w-[450px] w-full aspect-square rounded-2xl mt-4 mb-8'/>
+
+            <div className='flex flex-col items-end absolute bottom-0 -left-4'>
+              <LuSparkle size="72px" className="fill-pink stroke-[0.6px] stroke-dark -mb-6 z-20" color="#38B8FF"/>
+              <LuSparkle size="46px" className="fill-pink stroke-[0.8px] stroke-dark z-20" color="#38B8FF"/>
+            </div>
           </div>
+
       </section>
     </Container>
   )
