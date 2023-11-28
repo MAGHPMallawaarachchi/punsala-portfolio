@@ -23,7 +23,7 @@ const About = () => {
 
           <div className='flex items-end relative px-8'>
             <motion.div 
-              className='flex flex-col items-end absolute -top-2 -right-3'
+              className='flex flex-col items-end absolute -top-2 -right-1'
               initial={{
                 rotate: 5,
               }}
