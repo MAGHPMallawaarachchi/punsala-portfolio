@@ -21,7 +21,7 @@ const About = () => {
               <Button text='linkedin' color='green' link='https://www.linkedin.com/in/punsala/'></Button>
           </div>
 
-          <div className='flex items-end relative px-6'>
+          <div className='flex items-end relative px-8'>
             <motion.div 
               className='flex flex-col items-end absolute -top-2 -right-3'
               initial={{
@@ -43,7 +43,7 @@ const About = () => {
 
             <Image src='/images/portrait.jpg' alt='portrait' width='450' height='450' className='object-cover h-full lg:w-[450px] w-full aspect-square rounded-2xl mt-4 mb-8'/>
 
-            <div className='flex flex-col items-end absolute bottom-0 -left-4'>
+            <div className='flex flex-col items-end absolute bottom-0 -left-2'>
               <motion.div
                 initial={{
                   rotate: -5,
