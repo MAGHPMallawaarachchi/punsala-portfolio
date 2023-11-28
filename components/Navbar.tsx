@@ -37,7 +37,7 @@ const Navbar = () => {
                 <ul className='hidden lg:flex gap-[10px]'>
                     {NavLinks.map((link) => (
                         <button key={link.key} className='hover:border-[2px] hover:border-dark dark:hover:border-light rounded-full w-32'>
-                            <Link key={link.key} href={link.href} className='px-[15px] py-[6px] dark:text-light text-dark uppercase text-base font-medium'>
+                            <Link key={link.key} href={link.href} className='px-[15px] py-[6px] dark:text-light text-dark uppercase text-base dark:font-medium font-semibold'>
                                 {link.text}
                             </Link>
                         </button>

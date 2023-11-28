@@ -7,12 +7,12 @@ const ContactForm = () => {
             <div className='flex flex-col items-start lg:w-[42%] 3xl:gap-8 gap-4'>
 
                 <div className='flex flex-col items-start'>
-                    <h2 className='dark:text-light text-dark sm:text-3xl text-xl leading-none'>Got an idea?</h2>
+                    <h2 className='dark:text-light text-dark sm:text-3xl text-xl leading-none font-medium'>Got an idea?</h2>
                     <h1 className='dark:text-light text-dark sm:text-[80px] text-[50px] sm:tracking-[4px] tracking-[3px] leading-none'>Let's</h1>
                     <h1 className='dark:text-light text-dark sm:text-[80px] text-[50px] sm:tracking-[4px] tracking-[3px] leading-none'>Collaborate</h1>
                 </div>
 
-                <p className='3xl:text-xl text-base dark:text-secondary-text text-dark text-left'>You can fill out the form below and I will get back to you so we can discuss your project in more detail. Looking forward to connecting with you!</p>
+                <p className='3xl:text-xl text-base dark:text-secondary-text text-dark text-left font-medium'>You can fill out the form below and I will get back to you so we can discuss your project in more detail. Looking forward to connecting with you!</p>
 
                 <IoMailSharp size="24px" className="dark:fill-pink fill-dark"/>
             </div>

@@ -15,7 +15,7 @@ const MyPassion = () => {
               <h1 className='dark:text-light text-dark sm:text-[80px] text-[60px] sm:tracking-[4px] tracking-[3px] leading-none'>My Passion</h1>
             </div>
 
-            <p className='paragraph'>I love coding. I create solutions using code, making ideas real. Challenges excite me. I fix and improve, finding joy. Tech world amazes, making me curious.</p>
+            <p className='dark:text-secondary-text text-dark text-left sm:leading-9 leading-7 sm:text-lg text-base font-medium'>I love coding. I create solutions using code, making ideas real. Challenges excite me. I fix and improve, finding joy. Tech world amazes, making me curious.</p>
             <Button text='github' color='pink' link='https://github.com/MAGHPMallawaarachchi'></Button>
           </div>
 

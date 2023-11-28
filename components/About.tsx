@@ -12,7 +12,7 @@ const About = () => {
                 <h2 className='dark:text-light text-dark sm:text-4xl text-2xl leading-none'>Hello, I'm</h2>
                 <h1 className='dark:text-light text-dark sm:text-[80px] text-[60px] sm:tracking-[4px] tracking-[3px] leading-none'>Punsala</h1>
               </div>
-              <p className='paragraph'>I'm a Software Engineering student at NSBM Green University, with a strong interest in full-stack development. I am eager to learn and grow as a software engineer, and I am excited to contribute my skills and knowledge to a team that is developing innovative and impactful software products.</p>
+              <p className='dark:text-secondary-text text-dark text-left sm:leading-9 leading-7 sm:text-lg text-base font-medium'>I'm a Software Engineering student at NSBM Green University, with a strong interest in full-stack development. I am eager to learn and grow as a software engineer, and I am excited to contribute my skills and knowledge to a team that is developing innovative and impactful software products.</p>
               <Button text='linkedin' color='green' link='https://www.linkedin.com/in/punsala/'></Button>
           </div>
 

@@ -15,14 +15,14 @@ const Footer = () => {
                 />
                 <div className="gap-4">
                     {NavLinks.map((link) => (
-                        <Link key={link.key} href={link.href} className='px-[15px] py-[6px] dark:text-light text-dark uppercase text-xs '>
+                        <Link key={link.key} href={link.href} className='px-[15px] py-[6px] dark:text-light text-dark uppercase text-xs sm:font-semibold font-medium '>
                             {link.text}
                         </Link>
                     ))}
                 </div>
                 <div className="flex sm:flex-col flex-row sm:gap-0 gap-8">
-                    <p className="uppercase sm:text-xs text-[8px] dark:text-secondary-text text-dark">©2023 Hasini Punsala</p>
-                    <p className="uppercase sm:text-xs text-[8px] dark:text-secondary-text text-dark">All Rights Reserved</p>
+                    <p className="uppercase sm:text-xs text-[8px] dark:text-secondary-text text-dark sm:font-semibold font-medium">©2023 Hasini Punsala</p>
+                    <p className="uppercase sm:text-xs text-[8px] dark:text-secondary-text text-dark sm:font-semibold font-medium">All Rights Reserved</p>
                 </div>
             </div>
         </footer>
