@@ -6,10 +6,10 @@ const ContactForm = () => {
         <div className='dark:bg-gray bg-light-blue border-2 border-dark w-full 3xl:rounded-[50px] rounded-[30px] flex lg:flex-row flex-col justify-between lg:p-16 p-8 lg:gap-20 gap-10 lg:mx-10 mx-5 my-20'>
             <div className='flex flex-col items-start lg:w-[42%] 3xl:gap-8 gap-4'>
 
-                <div className='flex flex-col items-start 3xl:gap-4 gap-2'>
-                    <h2 className='uppercase dark:text-light text-dark 3xl:text-3xl text-xl font-semibold'>got an idea?</h2>
-                    <h1 className='dark:text-light text-dark 3xl:text-7xl sm:text-5xl text-4xl'>Let's</h1>
-                    <h1 className='dark:text-light text-dark 3xl:text-7xl sm:text-5xl text-4xl'>Collaborate</h1>
+                <div className='flex flex-col items-start'>
+                    <h2 className='dark:text-light text-dark sm:text-3xl text-xl leading-none'>Got an idea?</h2>
+                    <h1 className='dark:text-light text-dark sm:text-[80px] text-[50px] sm:tracking-[4px] tracking-[3px] leading-none'>Let's</h1>
+                    <h1 className='dark:text-light text-dark sm:text-[80px] text-[50px] sm:tracking-[4px] tracking-[3px] leading-none'>Collaborate</h1>
                 </div>
 
                 <p className='3xl:text-xl text-base dark:text-secondary-text text-dark text-left'>You can fill out the form below and I will get back to you so we can discuss your project in more detail. Looking forward to connecting with you!</p>
@@ -50,7 +50,9 @@ const ContactForm = () => {
                         />
                     </div>
 
-                    <button className='text-dark bg-pink py-2 px-4 rounded-[33px] 3xl:max-w-[230px] max-w-[160px] font-bold 3xl:text-lg text-sm uppercase border-dark border-2'>Send</button>
+                    <button className="bg-pink uppercase text-dark sm:text-base text-sm font-bold leading-none border-2 border-dark rounded-full sm:w-[160px] w-[120px] py-[5px]">
+                        send
+                    </button>
 
                 </form>
             </div>

@@ -6,7 +6,7 @@ import Button from './Button'
 const About = () => {
   return (
     <Container>
-      <section className='flex lg:flex-row flex-col items-center overflow-hidden justify-between gap-10' id='about'>
+      <section className='flex lg:flex-row flex-col items-center overflow-hidden justify-between gap-10' id='about'> 
           <div className='flex flex-col lg:justify-between lg:w-[50%] gap-8'>
               <div className='flex flex-col'>
                 <h2 className='dark:text-light text-dark sm:text-4xl text-2xl leading-none'>Hello, I'm</h2>
