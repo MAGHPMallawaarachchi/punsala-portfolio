@@ -50,7 +50,7 @@ const ContactForm = () => {
                         />
                     </div>
 
-                    <button className="bg-pink uppercase text-dark sm:text-base text-sm font-bold leading-none border-2 border-dark rounded-full sm:w-[160px] w-[120px] py-[5px]">
+                    <button className="bg-pink uppercase text-dark sm:text-base text-sm font-bold leading-none border-2 border-dark rounded-full sm:w-[160px] w-[120px] py-[5px] hover:bg-dark hover:text-light dark:hover:bg-light dark:hover:text-dark transition-all duration-200">
                         send
                     </button>
 
