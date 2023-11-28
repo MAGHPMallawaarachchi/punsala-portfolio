@@ -1,7 +1,9 @@
 import Container from '@/components/Container';
+import FilterButton from '@/components/FilterButton';
 import Project from '@/components/Project';
+import ProjectCard from '@/components/ProjectCard';
 import Star from '@/components/icons/Star';
-import { ProjectData } from '@/constants';
+import { ProjectData, categories } from '@/constants';
 import Link from 'next/link';
 import React from 'react';
 import { LuSparkle } from 'react-icons/lu';
@@ -9,7 +11,7 @@ import { LuSparkle } from 'react-icons/lu';
 export default function ProjectsPage(){
     return(
         <Container>
-            <section className='flex flex-col items-center sm:gap-16 gap-10 h-screen' id='projects'>
+            <section className='flex flex-col items-center gap-12 sm:gap-[80px] mt-[30px]' id='projects'>
                 <div className='flex items-center'>
                     <div className='flex flex-col'>
                         <div className='hidden lg:flex flex-col items-end'>
@@ -24,20 +26,25 @@ export default function ProjectsPage(){
                         <div className='h-3'></div>
                     </div>
 
-                    <h1 className='dark:text-light text-dark sm:text-[80px] text-[60px] sm:tracking-[4px] tracking-[3px] leading-none'>Projects</h1>
-
+                    <h1 className='dark:text-light text-dark sm:text-[80px] xsm:text-[60px] text-[40px] sm:tracking-[4px] xsm:tracking-[3px] tracking-[2px] leading-none'>Projects</h1>
+                </div>
+                
+                <div className='flex gap-[20px]'>
+                    {categories.map((category) => (
+                        <FilterButton text={category.text}/>
+                    ))}
                 </div>
 
-                
-                <div className='flex flex-wrap sm:gap-16 gap-10 items-center justify-center w-full'>
+                <div className='flex flex-col lg:gap-[100px] gap-[60px] items-center'>
                     {ProjectData.map((project) => (
-                        <Project
-                        key={project.key}
-                        name={project.name}
-                        category={project.category}
-                        description={project.description}
-                        link={project.link}
-                        image={project.image}
+                        <ProjectCard
+                            key={project.key}
+                            name={project.name}
+                            category={project.category}
+                            description={project.description}
+                            link={project.link}
+                            image={project.image}
+                            techStack={project.techStack}
                         />
                     ))}
                 </div>
