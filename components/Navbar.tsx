@@ -6,7 +6,7 @@ import Link from 'next/link'
 import React, { useState } from 'react'
 import { ThemeSwitcher } from './ThemeSwitcher'
 import HamburgerMenu from './HamburgerMenu'
-import {AiFillGithub, AiFillLinkedin, AiFillInstagram, AiOutlineMenu} from 'react-icons/ai'
+import {AiFillGithub, AiFillLinkedin, AiFillInstagram, AiOutlineMenu, AiFillMediumCircle} from 'react-icons/ai'
 
 const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -59,6 +59,9 @@ const Navbar = () => {
                     </a>
                     <a href="https://github.com/MAGHPMallawaarachchi" key="Github" target="_blank" rel="noopener noreferrer">
                         <AiFillGithub size="28px" color="#38B8FF"/>
+                    </a>
+                    <a href="https://medium.com/@punsala" key="Medium" target="_blank" rel="noopener noreferrer">
+                        <AiFillMediumCircle size="28px" color="#38B8FF"/>
                     </a>
                     <ThemeSwitcher/>
                 </div>
