@@ -56,9 +56,15 @@ const Navbar = () => {
                     ))}
                 </motion.ul>
 
-                <button className='lg:hidden' onClick={toggleMenu}>
-                    <AiOutlineMenu size="28px" className="dark:fill-light fill-dark" />
-                </button>
+                <motion.button 
+                    className='lg:hidden' 
+                    initial={{y: -50, opacity: 0}}
+                    animate={{y: 0, opacity: 1}}
+                    transition={{duration: 0.8, delay: 0.3, type: 'spring', stiffness: 100}}
+                    onClick={toggleMenu}
+                >
+                    <AiOutlineMenu size="28px" className="dark:fill-light fill-dark"/>
+                </motion.button>
 
                 {isMenuOpen && <HamburgerMenu onClose={toggleMenu} />}
 
