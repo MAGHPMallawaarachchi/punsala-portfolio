@@ -30,6 +30,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${brasika.variable} ${macro.variable} font-serif h-full antialiased`}>
+      <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
+        <title>Punsala</title>
+      </head>
         <body className='w-full h-full bg-color flex flex-col'>
           <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <Navbar/>
