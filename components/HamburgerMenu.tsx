@@ -30,7 +30,7 @@ const HamburgerMenu = ({ onClose }: Props) => {
 
   return (
     <motion.div
-      className="lg:hidden flex flex-col justify-between fixed top-0 right-0 w-[80%] h-screen dark:bg-black bg-white bg-opacity-90 px-8 py-5 rounded-l-3xl"
+      className="lg:hidden flex flex-col justify-between fixed top-0 right-0 w-[80%] h-screen dark:bg-black bg-white px-8 py-5 rounded-l-3xl"
       initial={{ x: '100%' }}
       animate={controls}
       transition={{ type: 'spring', stiffness: 300, damping: 25 }}
