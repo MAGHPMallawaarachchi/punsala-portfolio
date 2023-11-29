@@ -46,15 +46,30 @@ export default function ProjectsPage() {
 
                 <div className='flex flex-col lg:gap-[100px] gap-[60px] items-center'>
                     {filteredProjects.map((project,key) => (
-                        <ProjectCard
-                            key={key}
-                            name={project.name}
-                            category={project.category}
-                            description={project.description}
-                            link={project.link}
-                            image={project.image}
-                            techStack={project.techStack}
-                        />
+                        <motion.div
+                            initial={{y:100, opacity:0}}
+                            whileInView={{
+                                y: 50,
+                                opacity: 1,
+                                transition: {
+                                  type: "spring",
+                                  bounce: 0.4,
+                                  duration: 0.8,
+                                  delay: key*0.2
+                                }
+                              }}
+                              viewport={{ once: true}}
+                        >
+                            <ProjectCard
+                                key={key}
+                                name={project.name}
+                                category={project.category}
+                                description={project.description}
+                                link={project.link}
+                                image={project.image}
+                                techStack={project.techStack}
+                            />
+                        </motion.div>
                     ))}
                 </div>
 
