@@ -7,6 +7,7 @@ import FilterButton from '@/components/FilterButton';
 import ProjectCard from '@/components/ProjectCard';
 import { ProjectData, categories } from '@/constants';
 import { LuSparkle } from 'react-icons/lu';
+import Stars from '@/components/Stars';
 
 export default function ProjectsPage() {
     const [selectedCategory, setSelectedCategory] = useState(null);
@@ -23,19 +24,7 @@ export default function ProjectsPage() {
         <Container>
             <section className='flex flex-col items-center gap-12 sm:gap-[80px] mt-[30px]' id='projects'>
                 <div className='flex items-center'>
-                    <div className='flex flex-col'>
-                        <div className='hidden lg:flex flex-col items-end'>
-                            <LuSparkle size="72px" className="fill-blue stroke-[0.6px] stroke-dark -mb-6" color="#38B8FF"/>
-                            <LuSparkle size="46px" className="fill-blue stroke-[0.8px] stroke-dark" color="#38B8FF"/>
-                        </div>
-
-                        <div className='flex lg:hidden flex-col items-end'>
-                            <LuSparkle size="62px" className="fill-blue stroke-[0.6px] stroke-dark -mb-5" color="#38B8FF"/>
-                            <LuSparkle size="36px" className="fill-blue stroke-[0.8px] stroke-dark" color="#38B8FF"/>
-                        </div>
-                        <div className='h-3'></div>
-                    </div>
-
+                    <Stars/>
                     <h1 className='dark:text-light text-dark sm:text-[80px] xsm:text-[60px] text-[40px] sm:tracking-[4px] xsm:tracking-[3px] tracking-[2px] leading-none'>Projects</h1>
                 </div>
                 

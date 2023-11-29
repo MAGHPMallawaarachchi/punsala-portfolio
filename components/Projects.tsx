@@ -7,6 +7,7 @@ import Container from './Container'
 import Link from 'next/link'
 import { LuSparkle } from "react-icons/lu";
 import { motion } from 'framer-motion'
+import Stars from './Stars'
 
 const Projects = () => {
   return (
@@ -21,86 +22,7 @@ const Projects = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.1 }}
           >
-            <div className='flex flex-col'>
-              <div className='hidden lg:flex flex-col items-end'>
-                <motion.div
-                  initial={{
-                    rotate: -5,
-                  }}
-                  animate={{
-                    rotate: 5,
-                  }}
-                  transition={{
-                    type: 'tween',
-                    ease: 'easeInOut',
-                    repeat: Infinity,
-                    repeatType: 'reverse',
-                    duration: 0.5,
-                    delay: 0.2,
-                  }}
-                >
-                  <LuSparkle size="72px" className="fill-blue stroke-[0.6px] stroke-dark -mb-6" color="#38B8FF"/>
-                </motion.div>
-
-                <motion.div
-                  initial={{
-                    rotate: 5,
-                  }}
-                  animate={{
-                    rotate: -5,
-                  }}
-                  transition={{
-                    type: 'tween',
-                    ease: 'easeInOut',
-                    repeat: Infinity,
-                    repeatType: 'reverse',
-                    duration: 0.5,
-                  }}
-                >
-                  <LuSparkle size="46px" className="fill-blue stroke-[0.8px] stroke-dark" color="#38B8FF"/>
-                </motion.div>
-              </div>
-
-              <div className='flex lg:hidden flex-col items-end'>
-                <motion.div
-                  initial={{
-                    rotate: -5,
-                  }}
-                  animate={{
-                    rotate: 5,
-                  }}
-                  transition={{
-                    type: 'tween',
-                    ease: 'easeInOut',
-                    repeat: Infinity,
-                    repeatType: 'reverse',
-                    duration: 0.5,
-                    delay: 0.2,
-                  }}
-                >
-                  <LuSparkle size="62px" className="fill-blue stroke-[0.6px] stroke-dark -mb-5" color="#38B8FF"/>
-                </motion.div>
-                
-                <motion.div
-                  initial={{
-                    rotate: 5,
-                  }}
-                  animate={{
-                    rotate: -5,
-                  }}
-                  transition={{
-                    type: 'tween',
-                    ease: 'easeInOut',
-                    repeat: Infinity,
-                    repeatType: 'reverse',
-                    duration: 0.5,
-                  }}
-                >
-                  <LuSparkle size="36px" className="fill-blue stroke-[0.8px] stroke-dark" color="#38B8FF"/>
-                </motion.div>
-              </div>
-              <div className='h-3'></div>
-            </div>
+            <Stars/>
             <div>
                 <h2 className='dark:text-light text-dark sm:text-4xl text-2xl leading-none'>My Latest</h2>
                 <h1 className='dark:text-light text-dark sm:text-[80px] text-[60px] sm:tracking-[4px] tracking-[3px] leading-none'>Projects</h1>
