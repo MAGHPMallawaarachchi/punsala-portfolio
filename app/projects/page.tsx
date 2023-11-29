@@ -7,6 +7,7 @@ import ProjectCard from '@/components/ProjectCard';
 import { ProjectData, categories } from '@/constants';
 import AnimationWrapper from '@/components/AnimationWrapper';
 import Stars from '@/components/Stars';
+import { motion } from 'framer-motion';
 
 export default function ProjectsPage() {
     const [selectedCategory, setSelectedCategory] = useState(null);
@@ -32,7 +33,13 @@ export default function ProjectsPage() {
                 <div className='flex gap-[20px]'>
                     {categories.map((category, key) => (
                         <AnimationWrapper delay={key*0.2}>
-                            <FilterButton active={category.text === selectedCategory} text={category.text} onClick={() => handleFilterButtonClick(category.text)} />
+                            <motion.div
+                                whileHover={{ y: -5 }}
+                                whileTap={{ scale: 0.9 }}
+                                transition={{ duration: 0.4 }}
+                            >
+                                <FilterButton active={category.text === selectedCategory} text={category.text} onClick={() => handleFilterButtonClick(category.text)} />
+                            </motion.div>
                         </AnimationWrapper>
                     ))}
                 </div>
