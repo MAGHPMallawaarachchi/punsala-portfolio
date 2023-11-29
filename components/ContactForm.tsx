@@ -1,5 +1,9 @@
+"use client"
+
 import React from 'react';
 import { IoMailSharp } from "react-icons/io5";
+import { motion } from 'framer-motion';
+import { LuSparkle } from 'react-icons/lu';
 
 const ContactForm = () => {
     return(
@@ -8,7 +12,26 @@ const ContactForm = () => {
 
                 <div className='flex flex-col items-start'>
                     <h2 className='dark:text-light text-dark sm:text-3xl text-xl leading-none font-medium'>Got an idea?</h2>
-                    <h1 className='dark:text-light text-dark sm:text-[80px] text-[50px] sm:tracking-[4px] tracking-[3px] leading-none'>Let's</h1>
+                    <div className='flex'>
+                        <h1 className='dark:text-light text-dark sm:text-[80px] text-[50px] sm:tracking-[4px] tracking-[3px] leading-none'>Let's</h1>
+                        <motion.div 
+                            initial={{
+                                rotate: 5,
+                            }}
+                            animate={{
+                                rotate: -5,
+                            }}
+                            transition={{
+                                type: 'tween',
+                                ease: 'easeInOut',
+                                repeat: Infinity,
+                                repeatType: 'reverse',
+                                duration: 0.5,
+                            }}
+                        >
+                            <LuSparkle size="72px" className="fill-blue stroke-[0.6px] stroke-dark" color="#38B8FF"/>
+                        </motion.div>
+                    </div>
                     <h1 className='dark:text-light text-dark sm:text-[80px] text-[50px] sm:tracking-[4px] tracking-[3px] leading-none'>Collaborate</h1>
                 </div>
 

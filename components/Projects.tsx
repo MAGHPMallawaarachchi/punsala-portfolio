@@ -26,6 +26,36 @@ const Projects = () => {
           </AnimationWrapper>
 
           <AnimationWrapper delay={0.1}>
+            <div className='hidden sm:flex'>
+              <Link href='/projects'>
+                <button
+                  className="bg-blue uppercase text-dark sm:text-base text-sm font-bold leading-none border-2 border-dark rounded-full sm:w-[160px] w-[120px] py-[5px] hover:bg-dark hover:text-light dark:hover:bg-light dark:hover:text-dark transition-all duration-200"
+                >
+                  view all
+                </button>
+              </Link>
+            </div>
+          </AnimationWrapper>
+
+        </div>
+        
+        <div className='flex flex-wrap sm:gap-16 gap-10 items-center justify-center w-full'>
+          {ProjectData.slice(0,4).map((project, key) => (
+            <AnimationWrapper delay={key*0.2}>              
+                <Project
+                  key={project.key}
+                  name={project.name}
+                  category={project.category}
+                  description={project.description}
+                  link={project.link}
+                  image={project.image}
+                />
+            </AnimationWrapper>
+          ))}
+        </div>
+
+        <AnimationWrapper delay={0.2}>
+          <div className='sm:hidden flex'>
             <Link href='/projects'>
               <button
                 className="bg-blue uppercase text-dark sm:text-base text-sm font-bold leading-none border-2 border-dark rounded-full sm:w-[160px] w-[120px] py-[5px] hover:bg-dark hover:text-light dark:hover:bg-light dark:hover:text-dark transition-all duration-200"
@@ -33,34 +63,8 @@ const Projects = () => {
                 view all
               </button>
             </Link>
-          </AnimationWrapper>
-
-        </div>
-        
-        <div className='flex flex-wrap sm:gap-16 gap-10 items-center justify-center w-full'>
-          {ProjectData.slice(0,4).map((project, key) => (
-            <AnimationWrapper delay={key*0.2}>
-              <Project
-                key={project.key}
-                name={project.name}
-                category={project.category}
-                description={project.description}
-                link={project.link}
-                image={project.image}
-              />
-            </AnimationWrapper>
-          ))}
-        </div>
-
-        <div className='sm:hidden flex'>
-        <Link href='/projects'>
-          <button
-            className="bg-blue uppercase text-dark sm:text-base text-sm font-bold leading-none border-2 border-dark rounded-full sm:w-[160px] w-[120px] py-[5px] hover:bg-dark hover:text-light dark:hover:bg-light dark:hover:text-dark transition-all duration-200"
-          >
-            view all
-          </button>
-        </Link>
-        </div>
+          </div>
+        </AnimationWrapper>
 
       </section>
     </Container>
