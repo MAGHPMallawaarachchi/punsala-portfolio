@@ -15,6 +15,7 @@ const ContactForm = () => {
                     <div className='flex'>
                         <h1 className='dark:text-light text-dark sm:text-[80px] text-[50px] sm:tracking-[4px] tracking-[3px] leading-none'>Let's</h1>
                         <motion.div 
+                            className='sm:flex hidden'
                             initial={{
                                 rotate: 5,
                             }}
@@ -30,6 +31,24 @@ const ContactForm = () => {
                             }}
                         >
                             <LuSparkle size="72px" className="fill-blue stroke-[0.6px] stroke-dark" color="#38B8FF"/>
+                        </motion.div>
+                        <motion.div 
+                            className='flex sm:hidden'
+                            initial={{
+                                rotate: 5,
+                            }}
+                            animate={{
+                                rotate: -5,
+                            }}
+                            transition={{
+                                type: 'tween',
+                                ease: 'easeInOut',
+                                repeat: Infinity,
+                                repeatType: 'reverse',
+                                duration: 0.5,
+                            }}
+                        >
+                            <LuSparkle size="52px" className="fill-blue stroke-[0.6px] stroke-dark" color="#38B8FF"/>
                         </motion.div>
                     </div>
                     <h1 className='dark:text-light text-dark sm:text-[80px] text-[50px] sm:tracking-[4px] tracking-[3px] leading-none'>Collaborate</h1>
