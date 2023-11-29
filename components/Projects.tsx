@@ -51,7 +51,7 @@ const Projects = () => {
                   transition: {
                     type: "spring",
                     bounce: 0.4,
-                    duration: 0.8,
+                    duration: 1,
                     delay: key*0.2
                   }
                 }}
