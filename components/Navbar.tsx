@@ -47,9 +47,9 @@ const Navbar = () => {
                     animate={{y: 0, opacity: 1}}
                     transition={{duration: 0.8, delay: 0.3, type: 'spring', stiffness: 100}}
                 >
-                    {NavLinks.map((link) => (
-                        <button key={link.key} className='hover:border-[2px] hover:border-dark dark:hover:border-light rounded-full w-32'>
-                            <Link key={link.key} href={link.href} className='px-[15px] py-[6px] dark:text-light text-dark uppercase text-base dark:font-medium font-semibold'>
+                    {NavLinks.map((link, key) => (
+                        <button key={key} className='hover:border-[2px] hover:border-dark dark:hover:border-light rounded-full w-32'>
+                            <Link href={link.href} className='px-[15px] py-[6px] dark:text-light text-dark uppercase text-base dark:font-medium font-semibold'>
                                 {link.text}
                             </Link>
                         </button>

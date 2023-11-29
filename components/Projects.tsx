@@ -7,6 +7,7 @@ import Container from './Container'
 import Link from 'next/link'
 import Stars from './Stars'
 import AnimationWrapper from './AnimationWrapper'
+import { motion } from 'framer-motion'
 
 const Projects = () => {
   return (
@@ -41,7 +42,21 @@ const Projects = () => {
         
         <div className='flex flex-wrap sm:gap-16 gap-10 items-center justify-center w-full'>
           {ProjectData.slice(0,4).map((project, key) => (
-            <AnimationWrapper delay={key*0.2}>              
+            <motion.div
+              key={key}
+              initial={{y:100, opacity:0}}
+              whileInView={{
+                  y: 0,
+                  opacity: 1,
+                  transition: {
+                    type: "spring",
+                    bounce: 0.4,
+                    duration: 0.8,
+                    delay: key*0.2
+                  }
+                }}
+              viewport={{ once: true}}
+            >            
                 <Project
                   key={project.key}
                   name={project.name}
@@ -50,7 +65,7 @@ const Projects = () => {
                   link={project.link}
                   image={project.image}
                 />
-            </AnimationWrapper>
+            </motion.div>
           ))}
         </div>
 

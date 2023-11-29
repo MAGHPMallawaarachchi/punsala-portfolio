@@ -22,9 +22,9 @@ export default function ProjectsPage() {
 
     return(
         <Container>
-            <section className='flex flex-col items-center sm:gap-[60px] mt-[30px]' id='projects'>
+            <section className='flex flex-col items-center sm:gap-[60px] gap-12 mt-[30px]' id='projects'>
                 <AnimationWrapper delay={0.1}>
-                    <div className='flex items-center mb-12'>
+                    <div className='flex items-center'>
                         <Stars/>
                         <h1 className='dark:text-light text-dark sm:text-[80px] xsm:text-[60px] text-[40px] sm:tracking-[4px] xsm:tracking-[3px] tracking-[2px] leading-none'>Projects</h1>
                     </div>
@@ -32,7 +32,7 @@ export default function ProjectsPage() {
                 
                 <div className='flex flex-wrap gap-[20px] justify-center'>
                     {categories.map((category, key) => (
-                        <AnimationWrapper delay={key*0.2}>
+                        <AnimationWrapper delay={key*0.2} key={key}>
                             <motion.div
                                 whileHover={{ y: -5 }}
                                 whileTap={{ scale: 0.9 }}
@@ -44,12 +44,13 @@ export default function ProjectsPage() {
                     ))}
                 </div>
 
-                <div className='flex flex-col lg:gap-[100px] gap-[60px] items-center mb-12'>
+                <div className='flex flex-col lg:gap-[100px] gap-[60px] items-center'>
                     {filteredProjects.map((project,key) => (
                         <motion.div
+                            key={key}
                             initial={{y:100, opacity:0}}
                             whileInView={{
-                                y: 50,
+                                y: 0,
                                 opacity: 1,
                                 transition: {
                                   type: "spring",
