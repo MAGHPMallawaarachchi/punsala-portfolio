@@ -13,8 +13,8 @@ type Props = {
 
 const ProjectCard = ({name, category, description, link, image, techStack}:Props) => {
     return(
-        <div className="flex lg:flex-row flex-col lg:gap-[60px] gap-5 items-center w-[95%]">
-            <Image src={image} width={440} height={100} alt={name} className='rounded-2xl lg:w-[44%] w-full' />
+        <div className="flex lg:flex-row flex-col lg:gap-[60px] gap-5 items-center ">
+            <Image src={image} width={540} height={100} alt={name} className='rounded-2xl lg:w-[45%] w-full' />
             <div className="flex flex-col items-start lg:gap-10 gap-5">
                 <div className='flex flex-col items-start gap-1'>
                     <h4 className=' dark:text-secondary-text text-dark text-sm sm:text-xl leading-none font-medium'>{category}</h4>

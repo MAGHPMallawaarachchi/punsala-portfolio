@@ -22,15 +22,15 @@ export default function ProjectsPage() {
 
     return(
         <Container>
-            <section className='flex flex-col items-center gap-12 sm:gap-[80px] mt-[30px]' id='projects'>
+            <section className='flex flex-col items-center sm:gap-[60px] mt-[30px]' id='projects'>
                 <AnimationWrapper delay={0.1}>
-                    <div className='flex items-center'>
+                    <div className='flex items-center mb-12'>
                         <Stars/>
                         <h1 className='dark:text-light text-dark sm:text-[80px] xsm:text-[60px] text-[40px] sm:tracking-[4px] xsm:tracking-[3px] tracking-[2px] leading-none'>Projects</h1>
                     </div>
                 </AnimationWrapper>
                 
-                <div className='flex gap-[20px]'>
+                <div className='flex flex-wrap gap-[20px] justify-center'>
                     {categories.map((category, key) => (
                         <AnimationWrapper delay={key*0.2}>
                             <motion.div
@@ -44,7 +44,7 @@ export default function ProjectsPage() {
                     ))}
                 </div>
 
-                <div className='flex flex-col lg:gap-[100px] gap-[60px] items-center'>
+                <div className='flex flex-col lg:gap-[100px] gap-[60px] items-center mb-12'>
                     {filteredProjects.map((project,key) => (
                         <motion.div
                             initial={{y:100, opacity:0}}

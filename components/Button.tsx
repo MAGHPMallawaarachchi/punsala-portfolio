@@ -16,7 +16,7 @@ const Button = ({ text, color, link }: Props) => {
         transition={{ duration: 0.4 }}
       >
         <button
-          className={`uppercase text-dark sm:text-base text-sm font-bold leading-none border-2 border-dark rounded-full sm:w-[160px] w-[120px] py-[5px] hover:bg-dark hover:text-light dark:hover:bg-light dark:hover:text-dark transition-all duration-200 ${
+          className={`uppercase text-dark sm:text-base text-xs font-bold leading-none border-2 border-dark rounded-full sm:w-[160px] w-[120px] py-[5px] hover:bg-dark hover:text-light dark:hover:bg-light dark:hover:text-dark transition-all duration-200 ${
             color === 'blue'
             ? 'bg-blue'
             : color === 'green'
