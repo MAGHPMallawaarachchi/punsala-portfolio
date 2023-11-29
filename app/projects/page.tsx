@@ -1,12 +1,11 @@
 "use client"
 
 import React, { useState } from 'react';
-
 import Container from '@/components/Container';
 import FilterButton from '@/components/FilterButton';
 import ProjectCard from '@/components/ProjectCard';
 import { ProjectData, categories } from '@/constants';
-import { LuSparkle } from 'react-icons/lu';
+import AnimationWrapper from '@/components/AnimationWrapper';
 import Stars from '@/components/Stars';
 
 export default function ProjectsPage() {
@@ -23,14 +22,18 @@ export default function ProjectsPage() {
     return(
         <Container>
             <section className='flex flex-col items-center gap-12 sm:gap-[80px] mt-[30px]' id='projects'>
-                <div className='flex items-center'>
-                    <Stars/>
-                    <h1 className='dark:text-light text-dark sm:text-[80px] xsm:text-[60px] text-[40px] sm:tracking-[4px] xsm:tracking-[3px] tracking-[2px] leading-none'>Projects</h1>
-                </div>
+                <AnimationWrapper delay={0.1}>
+                    <div className='flex items-center'>
+                        <Stars/>
+                        <h1 className='dark:text-light text-dark sm:text-[80px] xsm:text-[60px] text-[40px] sm:tracking-[4px] xsm:tracking-[3px] tracking-[2px] leading-none'>Projects</h1>
+                    </div>
+                </AnimationWrapper>
                 
                 <div className='flex gap-[20px]'>
-                    {categories.map((category) => (
-                        <FilterButton active={category.text === selectedCategory} text={category.text} onClick={() => handleFilterButtonClick(category.text)} />
+                    {categories.map((category, key) => (
+                        <AnimationWrapper delay={key*0.2}>
+                            <FilterButton active={category.text === selectedCategory} text={category.text} onClick={() => handleFilterButtonClick(category.text)} />
+                        </AnimationWrapper>
                     ))}
                 </div>
 
