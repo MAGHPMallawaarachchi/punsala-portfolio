@@ -17,7 +17,7 @@ const Navbar = () => {
     }
 
     return (
-            <nav className='flex items-center justify-between w-full py-4 px-8 fixed top-0 z-50 inset-x-0 bg-color shadow-sm '>
+            <nav className='flex items-center justify-between w-full py-4 sm:px-8 px-6 fixed top-0 z-50 inset-x-0 bg-color shadow-sm '>
                 <motion.div
                     initial={{y: -20, opacity: 0}}
                     animate={{y: 0, opacity: 1}}
