@@ -37,7 +37,7 @@ const HamburgerMenu = ({ onClose }:Props) => {
         <ul className='flex flex-col items-center gap-10'>
             {NavLinks.map((link) => (
                 <button className='navbar-button' onClick={onClose}>
-                    <Link href={link.href} key={link.key} className='px-[15px] py-[6px] navbar-items'>
+                    <Link href={link.href} key={link.key} className='px-[15px] py-[6px] navbar-items font-medium'>
                         {link.text}
                     </Link>
                 </button>
