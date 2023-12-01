@@ -32,7 +32,7 @@ export default function ProjectsPage() {
                 
                 <div className='flex flex-wrap gap-[20px] justify-center'>
                     {categories.map((category, key) => (
-                        <AnimationWrapper delay={key*0.2} key={key}>
+                        <AnimationWrapper delay={key*0.1} key={key}>
                             <motion.div
                                 whileHover={{ y: -5 }}
                                 whileTap={{ scale: 0.9 }}
